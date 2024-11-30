@@ -134,9 +134,6 @@ class ProyectosManager {
         let seccion = `<div class="mb-3"><label class="form-label">${key}</label> <button class="btn btn-success btn-sm" onclick="agregarElemento('${key}')"><i class="bi bi-plus"></i></button><ul class="list-group">`;
     
         array.forEach((item, index) => {
-            const itemString = JSON.stringify(item);
-            //const displayString = itemString.length > 15 ? itemString.substring(0, 15) + '...' : itemString;
-            const displayString = itemString;
     
             seccion += `
                 <li class="list-group-item d-flex justify-content-between align-items-center">
@@ -165,6 +162,18 @@ class ProyectosManager {
         } catch (error) {
             console.error(error);
         }
+    }
+
+    async checkFields (oForm) {
+        const datos = await this.cargarJSON();
+        const fields = Object.keys(datos[0]);
+        const arrayChk = fields.map((field) => `<div class="form-check">
+            <input type="checkbox" class="form-check-input" id="${field}" name="${field}" value="${field}">
+            <label class="form-check-label" for="${field}">${field}</label>
+        </div>`);
+        oForm.innerHTML+=arrayChk.join('');
+        const boton = `<button type="submit" class="btn btn-primary">Enviar</button>`;
+        oForm.innerHTML+=boton;
     }
     
 }
