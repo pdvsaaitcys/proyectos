@@ -87,15 +87,9 @@ class ProyectosManager {
         }
     }
 
-    generarFormulario(registro) {
-        if (!registro) {
-            document.body.innerHTML += '<p>No hay registro para mostrar en el formulario.</p>';
-            return;
-        }
-    
-        const codigo = registro['Código'] || 'Desconocido';
-        let formulario = `<div class="container mt-4"><h2>Formulario del Registro ${codigo}</h2><form>`;
-    
+    generarINPUTS(registro, enBlanco=false) {
+        let formulario ='', valor;
+        if (!registro) return'';
         for (const [key, value] of Object.entries(registro)) {
             // Ignorar el campo "Código"
             if (key === 'Código') {
@@ -106,21 +100,36 @@ class ProyectosManager {
             if (Array.isArray(value) && value.every(item => typeof item === 'object')) {
                 formulario += this.generarSeccionArray(key, value);
             } else if (typeof value === 'string' && value.length > 100) {
+                valor = enBlanco ? '' : value;
                 formulario += `
                     <div class="mb-3">
                         <label for="${key}" class="form-label">${key}</label>
-                        <textarea class="form-control" id="${key}" name="${key}" rows="3">${this.formatearValor(key, value)}</textarea>
+                        <textarea class="form-control" id="${key}" name="${key}" rows="3">${valor}</textarea>
                     </div>
                 `;
             } else {
+                valor = enBlanco ? '' : value;
                 formulario += `
                     <div class="mb-3">
                         <label for="${key}" class="form-label">${key}</label>
-                        <input type="text" class="form-control" id="${key}" name="${key}" value="${value}" />
+                        <input type="text" class="form-control" id="${key}" name="${key}" value="${valor}" />
                     </div>
                 `;
             }
         }
+        return formulario;
+    }
+
+    generarFormulario(registro) {
+        if (!registro) {
+            document.body.innerHTML += '<p>No hay registro para mostrar en el formulario.</p>';
+            return;
+        }
+
+        const codigo = registro['Código'] || 'Desconocido';
+        let formulario = `<div class="container mt-4"><h2>Formulario del Registro ${codigo}</h2><form>`;
+        
+        formulario += this.generarINPUTS(registro);
     
         formulario += `
             <button type="submit" class="btn btn-primary">Enviar</button>
@@ -131,7 +140,27 @@ class ProyectosManager {
     }
     
     generarSeccionArray(key, array) {
-        let seccion = `<div class="mb-3"><label class="form-label">${key}</label> <button class="btn btn-success btn-sm" onclick="agregarElemento('${key}')"><i class="bi bi-plus"></i></button><ul class="list-group">`;
+        let seccion = `
+        <div class="modal" id="modal-${key}">
+            <div class="modal-dialog">
+            <div class="modal-content">
+                <form>
+                <div class="modal-header">
+                <h4 class="modal-title">${key}</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    ${this.generarINPUTS(array[0], true)}
+                </div>
+                <div class="modal-footer">
+                <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Guardar</button>
+                </div>
+                </form>
+            </div>
+            </div>
+        </div>`;
+
+        seccion += `<div class="mb-3"><label class="form-label">${key}</label> <button class="btn btn-success btn-sm"  data-bs-toggle="modal" data-bs-target="#modal-${key}" onclick="this.action='Crear"><i class="bi bi-plus"></i></button><ul class="list-group">`;
     
         array.forEach((item, index) => {
     
@@ -139,8 +168,8 @@ class ProyectosManager {
                 <li class="list-group-item d-flex justify-content-between align-items-center">
                     ${this.formatearObjeto(item)}
                     <div>
-                        <button class="btn btn-warning btn-sm" onclick="editarElemento('${key}', ${index})"><i class="bi bi-pencil"></i></button>
-                        <button class="btn btn-danger btn-sm" onclick="eliminarElemento('${key}', ${index})"><i class="bi bi-x"></i></button>
+                        <button class="btn btn-warning btn-sm" data-bs-toggle="modal" data-bs-target="#modal-${key}" onclick="editarElemento('${key}', ${index})"><i class="bi bi-pencil"></i></button>
+                        <button class="btn btn-danger btn-sm" onclick="confirm('Elimina ${key}')"><i class="bi bi-x"></i></button>
                     </div>
                 </li>
             `;
