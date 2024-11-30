@@ -17,7 +17,7 @@
 
 <div class="container mt-3">
     <h3>Generador de reporte</h3>
-    <form id="form" onsubmit="return createReport(this);">
+    <form id="form">
         <div class="mb-3 mt-3">
             <label for="titulo-reporte" class="form-label">Título del Reporte</label>
             <input type="text" class="form-control" id="titulo-reporte" placeholder="Titulo del Reporte" name="tituloReporte">
@@ -30,13 +30,13 @@
     const proyectos = new ProyectosManager(url);
     const oForm = document.getElementById('form');
     proyectos.checkFields(oForm);
-    const createReport = (oForm) => {
+    oForm.onsubmit = function(event) {
+        event.preventDefault(); // Inhibe el envío del formulario
         const títuloReporte = oForm.tituloReporte.value;
         const checkboxes = oForm.querySelectorAll('input[type="checkbox"]:checked');
         const selectedFields = Array.from(checkboxes).map(checkbox => checkbox.value);
         proyectos.generarTabla(títuloReporte, selectedFields);
-        return false;
-    }
+    };
 </script>
 
 </body>
