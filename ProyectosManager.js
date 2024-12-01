@@ -215,6 +215,43 @@ class ProyectosManager {
         const boton = `<button type="submit" class="btn btn-primary">Enviar</button>`;
         oForm.innerHTML+=boton;
     }
+
+    async saveJSON() {
+        const token = letras.join('');
+        const owner = 'pdvsaaitcys';
+        const repo = 'proyectos';
+        const path = this.url; // Define la ruta donde se guardará el archivo
+    
+        try {
+            const datos = await this.cargarJSON();
+            const content = JSON.stringify(datos, null, 2); // Formato legible
+            
+            // Codificar el contenido en base64
+            const encodedContent = btoa(content);
+            
+            // Hacer la solicitud a la API de GitHub
+            const response = await fetch(`https://api.github.com/repos/${owner}/${repo}/contents/${path}`, {
+                method: 'PUT',
+                headers: {
+                    'Authorization': `token ${token}`,
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify({
+                    message: 'Añadiendo archivo JSON',
+                    content: encodedContent
+                })
+            });
+    
+            if (!response.ok) {
+                throw new Error(`Error al guardar el JSON: ${response.statusText}`);
+            }
+    
+            const data = await response.json();
+            console.log(data);
+        } catch (error) {
+            console.error('Error:', error);
+        }
+    }
     
 }
     // Funciones para manejar agregar, editar y eliminar elementos
