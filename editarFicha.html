@@ -19,6 +19,17 @@ const url = 'proyectos.json'; // Reemplaza con la URL de tu archivo JSON
 const codigoProyecto = getFieldFromLocation('codigo'); // Reemplaza 'nombreCampo' con el campo que desees
 const proyectos = new ProyectosManager(url);
 proyectos.mainForm(codigoProyecto);
+
+// Selecciona el primer formulario en el documento
+const formulario = document.querySelector('form');
+
+formulario.addEventListener('submit', function(event) {
+    event.preventDefault(); // Previene el envío del formulario
+
+    // Aquí puedes ejecutar la función que desees
+    proyectos.updateRegistro();
+});
+
 </script>
 </body>
 </html>

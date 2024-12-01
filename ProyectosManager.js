@@ -1,18 +1,30 @@
 class ProyectosManager {
     constructor(url) {
         this.url = url;
+        this.data = [];
+        this.pos = -1;
+        this.mean = [];
     }
 
     async cargarJSON() {
-        const response = await fetch(this.url);
-        if (!response.ok) {
-            throw new Error(`Error al cargar el JSON: ${response.statusText}`);
+        if (this.data.length === 0) {
+            const response = await fetch(this.url);
+            if (!response.ok) {
+                throw new Error(`Error al cargar el JSON: ${response.statusText}`);
+            }
+            return await response.json();    
+        }   else    {
+            return this.data;
         }
-        return await response.json();
     }
 
-    buscarRegistroPorCodigo(data, codigo) {
-        return data.find(registro => registro.Código === codigo);
+    buscarRegistroPorCodigo(codigo) {
+        this.data.forEach((registro, i) => {
+            if (registro.Código === codigo) {
+                this.pos = i;
+            }
+        })
+        return this.pos >= 0 ? this.data[this.pos] : null;
     }
 
     mostrarContenidoRegistro(registro, mostrarCampos = false, campos = []) {
@@ -53,7 +65,7 @@ class ProyectosManager {
     }
 
     async generarTabla(titulo, campos) {
-        const datos = await this.cargarJSON();
+        this.data = await this.cargarJSON();
         let tabla = `
             <div class="container mt-4">
                 <h2>${titulo}</h2>
@@ -64,7 +76,7 @@ class ProyectosManager {
                     <tbody>
         `;
 
-        datos.forEach(registro => {
+        this.data.forEach(registro => {
             const fila = campos.map(campo => `<td>${this.formatearValor(campo, registro[campo])}</td>`).join('');
             tabla += `<tr>${fila}</tr>`;
         });
@@ -79,15 +91,17 @@ class ProyectosManager {
 
     async main(codigoBuscado, mostrarCampos = false, campos = []) {
         try {
-            const datos = await this.cargarJSON();
-            const registro = this.buscarRegistroPorCodigo(datos, codigoBuscado);
+            this.data = await this.cargarJSON();
+            const registro = this.buscarRegistroPorCodigo(codigoBuscado);
             this.mostrarContenidoRegistro(registro, mostrarCampos, campos);
         } catch (error) {
             console.error(error);
         }
     }
 
-    generarINPUTS(registro, enBlanco=false) {
+    generarINPUTS(fuente, registro, enBlanco=false) {
+        let pos = 0;
+        let item;
         let formulario ='', valor;
         if (!registro) return'';
         for (const [key, value] of Object.entries(registro)) {
@@ -96,26 +110,43 @@ class ProyectosManager {
                 continue;
             }
     
+            item = {id:fuente.id+'_'+pos, json:fuente.json+`["${key}"]`};
             // Si es un array de objetos
             if (Array.isArray(value) && value.every(item => typeof item === 'object')) {
-                formulario += this.generarSeccionArray(key, value);
+                formulario += this.generarSeccionArray(item,key, value);
+            } else if (Array.isArray(value)) {
+                formulario += `<div class="mb-2"><label class="form-label">${key}</label><ol class="list-group">`;
+                formulario += value.map((v, i) => {
+                    item = {id:`${fuente.id}_${pos}_${i}`,json:`${fuente.json}["${key}"][${i}]`};
+                    this.mean.push(item);
+                    return `<li class="list-group-item">
+                    <div class="input-group">
+                        <span class="input-group-text">${i+1}</span>
+                        <input type="text" class="form-control" id="${item.id}" name="${item.id}" value="${v}" data-fuente="${fuente}" />
+                    </div>
+                    </li>`
+                }).join('');
+                formulario+='</ol>';
             } else if (typeof value === 'string' && value.length > 100) {
+                this.mean.push(item);
                 valor = enBlanco ? '' : value;
                 formulario += `
-                    <div class="mb-3">
-                        <label for="${key}" class="form-label">${key}</label>
-                        <textarea class="form-control" id="${key}" name="${key}" rows="3">${valor}</textarea>
+                    <div class="input-group mb-2">
+                        <span class="input-group-text">${key}</span>
+                        <textarea class="form-control" id="${item.id}" name="${item.id}" rows="3" data-fuente="${fuente}">${valor}</textarea>
                     </div>
                 `;
             } else {
+                this.mean.push(item);
                 valor = enBlanco ? '' : value;
                 formulario += `
-                    <div class="mb-3">
-                        <label for="${key}" class="form-label">${key}</label>
-                        <input type="text" class="form-control" id="${key}" name="${key}" value="${valor}" />
+                <div class="input-group mb-2">
+                    <span class="input-group-text">${key}</span>
+                    <input type="text" class="form-control" id="${item.id}" name="${item.id}" value="${valor}" data-fuente="${fuente}" />
                     </div>
                 `;
             }
+            pos++;
         }
         return formulario;
     }
@@ -129,64 +160,44 @@ class ProyectosManager {
         const codigo = registro['Código'] || 'Desconocido';
         let formulario = `<div class="container mt-4"><h2>Formulario del Registro ${codigo}</h2><form>`;
         
-        formulario += this.generarINPUTS(registro);
+        formulario += this.generarINPUTS({id:'', json:`this.data[${this.pos}]`},registro);
     
         formulario += `
-            <button type="submit" class="btn btn-primary">Enviar</button>
+            <button type="submit" class="btn btn-primary">Guardar</button>
             </form></div>
         `;
     
         document.body.innerHTML += formulario;
     }
     
-    generarSeccionArray(key, array) {
-        let seccion = `
-        <div class="modal" id="modal-${key}">
-            <div class="modal-dialog">
-            <div class="modal-content">
-                <form>
-                <div class="modal-header">
-                <h4 class="modal-title">${key}</h4>
-                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
-                </div>
-                <div class="modal-body">
-                    ${this.generarINPUTS(array[0], true)}
-                </div>
-                <div class="modal-footer">
-                <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Guardar</button>
-                </div>
-                </form>
-            </div>
-            </div>
-        </div>`;
-
-        seccion += `<div class="mb-3"><label class="form-label">${key}</label> <button class="btn btn-success btn-sm"  data-bs-toggle="modal" data-bs-target="#modal-${key}" onclick="this.action='Crear"><i class="bi bi-plus"></i></button><ul class="list-group">`;
-    
-        array.forEach((item, index) => {
-    
+    generarSeccionArray(fuente, key, array) {
+        let seccion='';
+        let elemento;
+        if (array.length>0) {
+            seccion += `<div class="mb-2"><label class="form-label">${key}</label><ul class="list-group">`;
+            let pos = 0;
+            array.forEach((item, index) => {
+                elemento = {id:`${fuente.id}_${pos}`,json:`${fuente.json}[${index}]`};
+                seccion += `
+                    <li class="list-group-item">
+                        ${this.generarINPUTS(elemento,item)}
+                    </li>
+                `;
+                pos++;
+            });        
             seccion += `
-                <li class="list-group-item d-flex justify-content-between align-items-center">
-                    ${this.formatearObjeto(item)}
-                    <div>
-                        <button class="btn btn-warning btn-sm" data-bs-toggle="modal" data-bs-target="#modal-${key}" onclick="editarElemento('${key}', ${index})"><i class="bi bi-pencil"></i></button>
-                        <button class="btn btn-danger btn-sm" onclick="confirm('Elimina ${key}')"><i class="bi bi-x"></i></button>
-                    </div>
-                </li>
+                </ul>
+                </div>
             `;
-        });
-    
-        seccion += `
-            </ul>
-            </div>
-        `;
+        }
     
         return seccion;
     }
 
     async mainForm(codigoBuscado) {
         try {
-            const datos = await this.cargarJSON();
-            const registro = this.buscarRegistroPorCodigo(datos, codigoBuscado);
+            this.data = await this.cargarJSON();
+            const registro = this.buscarRegistroPorCodigo(codigoBuscado);
             this.generarFormulario(registro);
         } catch (error) {
             console.error(error);
@@ -194,8 +205,8 @@ class ProyectosManager {
     }
 
     async checkFields (oForm) {
-        const datos = await this.cargarJSON();
-        const fields = Object.keys(datos[0]);
+        this.data = await this.cargarJSON();
+        const fields = Object.keys(this.data[0]);
         const arrayChk = fields.map((field) => `<div class="form-check">
             <input type="checkbox" class="form-check-input" id="${field}" name="${field}" value="${field}">
             <label class="form-check-label" for="${field}">${field}</label>
