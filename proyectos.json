@@ -1,356 +1,354 @@
 [
-  {
-    "CÛdigo": "F1.C0S062336",
-    "Nombre": "OPTIMIZACI”N Y RECUPERACI”N DE LA PLATAFORMA TECNOL”GICA PARA MERCADO INTERNACIONAL",
-    "AcrÛnimo": "SIGEMINTA",
-    "LÌder TÈcnico": "JosÈ Casanova",
-    "ContrataciÛn": [
-      {
-        "Actividad": "Bienes",
-        "Partida Presupuestaria": "402990000",
-        "Monto": "541592.06",
-        "DescripciÛn": "Servidores"
-      },
-      {
-        "Actividad": "Servicios",
-        "Partida Presupuestaria": "403100300",
-        "Monto": "3000",
-        "DescripciÛn": "DiseÒo de IntegraciÛn de Sistemas"
-      }
-    ],
-    "AÒos": [
-      {
-        "AÒo": "2024",
-        "Sometido (USD)": "569800",
-        "Presupuesto Aprobado": "569300",
-        "Presupuesto Aprobado Ajustado": "554900",
-        "Real": "0",
-        "Observaciones": "Se ajusta el presupuesto: Pasa de 569.300$ (Aprobado) a 288.050$ (Mejor VisiÛn)"
-      }
-    ],
-    "items": [
-      {
-        "Item": "ConsultorÌa Especializada para el desarrollo del Sistema Integrado para la GestiÛn de Mercado nacional (SIGEMINT)",
-        "Entregable": "",
-        "Monto": "0",
-        "EjecuciÛn Fisica": "0",
-        "Avance": [],
-        "Proximos Pasos": [],
-        "EjecuciÛn Financiera": "0"
-      },
-      {
-        "Item": "Servicio TÈcnico Especializado para la AutomatizaciÛn del Proceso de RecapitulaciÛn de TÈrminos y Condiciones de negocio (RECAP)",
-        "Entregable": "",
-        "Monto": "0",
-        "EjecuciÛn Fisica": "0",
-        "Avance": [],
-        "Proximos Pasos": [],
-        "EjecuciÛn Financiera": "0"
-      },
-      {
-        "Item": "ConsultorÌa Especializada para la SistematizaciÛn del Proceso de PlanificaciÛn de Mercado Nacional",
-        "Entregable": "",
-        "Monto": "0",
-        "EjecuciÛn Fisica": "0",
-        "Avance": [],
-        "Proximos Pasos": [],
-        "EjecuciÛn Financiera": "0"
-      }
-    ],
-    "fases": [
-      {
-        "nombre": "Optimizar la plataforma",
-        "alcance": [
-          "DiagnÛstico y levantamiento de informaciÛn de la situaciÛn de la plataforma tecnolÛgica de la DirecciÛn Gerencia de Mercado Internacional.",
-          "Levantamiento de los procesos Compras - Ventas Internacionales.",
-          "DiseÒo de arquitectura de propuesta para SIGEMINT.",
-          "SistematizaciÛn del proceso de PlanificaciÛn a corto y mediano plazo.",
-          "IncorporaciÛn de herramientas de inteligencia de negocio.",
-          "Aumento de almacenamiento de archivos de CyS Internacional"
-        ]
-      },
-      {
-        "nombre": "Evolucionar la plataforma tecnologica",
-        "alcance": [
-          "Sistema para el proceso de RecapitulaciÛn de Condiciones y tÈrminos de negociaciÛn (RECAP)",
-          "Sistema que modernice e integre procesos de CyS Internacional (SIGEMINT)."
-        ]
-      }
-    ],
-    "Alcance": [
-      "MÛdulo de PlanificaciÛn: Automatizar· el proceso del Plan Mensual de Suministro (PMDS) y el Plan Mensual de Tanqueros (PMDT) que ejecuta la gerencia de PlanificaciÛn y ProgramaciÛn Operacional de Mercado Internacional.",
-      "MÛdulo de An·lisis Comercial: Comprende herramientas para sistematizar los procesos de analisis",
-      "MÛdulo de Compra-Venta Internacional: Comprende la sistematizaciÛn asociado a los convenios comerciales de las ventas a plazo",
-      "ImplementaciÛn del alojamiento de los servicios de la SUITE SIGEMINT en una NUBE"
-    ],
-    "JustificaciÛn": "La VP de CyS Internacional ha solicitado la revisiÛn de la Plataforma tecnolÛgica que apoya a los procesos del negocio para el Mercado Internacional a los fines de poder posicionarse ante los grandes retos para el cumplimiento de las metas del 2024 para la comercializaciÚn de crudos, productos y especialidades",
-    "Beneficios": [
-      "Agiliza los procesos de planificaciÛn de suministro del hidrocarburos a clientes internacionales,  al disponer de acceso ·gil a los datos histÛricos para la generaciÛn de informaciÛn de los planes.",
-      "Favorece el an·lisis de negocio y la precisiÛn en la toma de decisiones, al disponer de diversos recursos tales como la generaciÛn de reportes en tiempo real.",
-      "Mejora la calidad del dato, debido a que reduce el error humano."
-    ],
-    "SituaciÛn Actual": [
-      "Linea de Negocio AIT para CyS propone  fase I a la gerencia de PlanificaciÛn y RendiciÛn de cuentas, que se basa en sistematizar el proceso de planificaciÛn a corto y mediano plazo.",
-      "TambiÈn se propone de SoluciÛn TecnolÛgica (SIGEMINT) para optimizar e integrar algunos sistemas de apoyo a los procesos de Mercado Internacional.",
-      "Sistema de  ComercializaciÛn de Hidrocarburos (SCH) requiere una optimizaciÛn de su arquitectura y migrarlo a tres capas.",
-      "Es necesaria la adquisiciÛn de licenciamiento/sustituciÛn de la herramienta Market View (marcadores de precios internacionales).",
-      "Se incorporar· en el corto plazo mayor capacidad de almacenamiento de archivos para la DirecciÛn Gerencia de Mercado Internacional (ya se adquiriÛ el servidor para este fin)."
-    ],
-    "¡reas de AtenciÛn": [
-      "Indispensable contar con la aprobaciÛn del negocio en cada etapa del proyecto y su correspondiente disponibilidad presupuestaria.",
-      "Indispensable participaciÛn activa del negocio (Comercio y Suministro Internacional) en todas las fases del proyecto: conceptualizaciÛn, desarrollo, pruebas e implementaciÛn., a travÈs de la asignaciÛn de analista o gerente al proyecto.",
-      "Imprescindible la participaciÛn de DirecciÛn Ejecutiva de Seguridad Integral (DSI) en cada fase del proyecto."
-    ],
-    "Municipio": "Libertador (Caracas)",
-    "Estado": "Distrito Capital"
-  },
-  {
-    "CÛdigo": "F1.C0S062335",
-    "Nombre": "OPTIMIZACI”N Y RECUPERACI”N DE LA PLATAFORMA TECNOL”GICA PARA TRANSPORTE MARITIMO",
-    "AcrÛnimo": "SIGETMAR",
-    "LÌder TÈcnico": "Angel Parra",
-    "ContrataciÛn": [
-      {
-        "Actividad": "Bienes",
-        "Partida Presupuestaria": "402990000",
-        "Monto": 496900,
-        "DescripciÛn": "Servidores"
-      },
-      {
-        "Actividad": "Servicios",
-        "Partida Presupuestaria": "403100300",
-        "Monto": 179000,
-        "DescripciÛn": "DiseÒo de IntegraciÛn de Sistemas"
-      }
-    ],
-    "AÒos": [
-      {
-        "AÒo": "2024",
-        "Sometido (USD)": 738300,
-        "Presupuesto Aprobado": 738800,
-        "Presupuesto Aprobado Ajustado": 702700,
-        "Real": 0,
-        "Observaciones": "Se ajusta presupuesto asignado 734800$ a 671037,93$ /Mejor VisiÛn)"
-      }
-    ],
-    "items": [
-      {
-        "Item": "ConsultorÌa Especializada para el desarrollo del Sistema Integrado para las Operaciones de Transporte MarÌtimo (SIGETMAR)",
-        "Entregable": "",
-        "Monto": 0,
-        "EjecuciÛn Fisica": 0,
-        "Avance": [],
-        "Proximos Pasos": [],
-        "EjecuciÛn Financiera": 0
-      },
-      {
-        "Item": "RecuperaciÛn de la Plataforma de Telecomunicaciones en la Flota MarÌtima",
-        "Entregable": "",
-        "Monto": 0,
-        "EjecuciÛn Fisica": 0,
-        "Avance": [],
-        "Proximos Pasos": [],
-        "EjecuciÛn Financiera": 0
-      }
-    ],
-    "fases": [
-      {
-        "nombre": "RecuperaciÛn de la plataforma tecnolÛgica",
-        "alcance": [
-          "DiagnÛstico de la plataforma AutomatizaciÛn, Inform·tica, Telecomunicaciones: Levantamiento de informaciÛn y Diagnostico, Mesas de trabajo para la puesta en operaciÛn de los sistemas existentes en la plataforma en apoyo a la gestiÛn de los proceso funcionales.",
-          "An·lisis de la soluciÛn Integral: ValidaciÛn de los procesos funcionales y procedimientos, Levantamiento de requerimientos.",
-          "Propuesta de la SoluciÛn Integral: Arquitectura de la soluciÛn Integral"
-        ]
-      },
-      {
-        "nombre": "OptimizaciÛn de la plataforma tecnolÛgica (Arquitectura nube)",
-        "alcance": [
-          "ValidaciÛn y actualizaciÛn de los requerimientos: Mejoras de la plataforma, actualizaciÛn y  mejoras a los sistemas",
-          "DiseÒo de prototipo"
-        ]
-      },
-      {
-        "nombre": "EvoluciÛn hacia una plataforma GIS",
-        "alcance": [
-          "ValidaciÛn y actualizaciÛn de los requerimientos: Mejoras de la plataforma, actualizaciÛn y  mejoras a los sistemas",
-          "DiseÒo de prototipo"
-        ]
-      }
-    ],
-    "Alcance": [
-      "Ajustes al sistema de apoyo operacional (SAO) de buques y las necesidades de los usuarios funcionales de los distintos procesos de la filial.",
-      "Recuperar aplicaciones inherentes a las funciones de apoyo a las operaciones y personal de flota",
-      "Recuperar plataforma de telecom (radios) en los buques.",
-      "Desarrollo de la Suite SIGE-MAR, en su versiÛn 1",
-      "OptimizaciÛn (renovaciÛn) de la plataforma de telecom (radios/enlace satelital) en buques-tierra.",
-      "ImplementaciÛn del alojamiento de los servicios de la SUITE SIGET-MAR en una NUBE"
-    ],
-    "JustificaciÛn": "La VP de CyS Internacional, a travÈs de su flial PDV Marina, requiere contar con herramientas tecnolÛgicas actualizadas que le permitan el control y aseguramiento de la confiabilidad de su proceso de gestiÛn de la flota, para de esta manera estar en lÌnea con las normativa de navegaciÛn y mantenimiento Internacional. De la misma manera, es necesaria la adecuaciÛn y actualizaciÛn de los sistemas que apoyan esa gestiÛn para la el manejo, registro y gestiÛn del personal de flota, con la finalidad de garantizar la disponibilidad del personal y  maximizar la operatividad de la flota propia de buques de PDVSA que apalanca la distribuciÛn (cabotaje), la exportaciÛn e importaciÛn de crudo y productos, actividad medular en la cadena valor de la corporaciÛn.",
-    "Beneficios": [
-      "Mejora la gestiÛn operativa y administrativa en el proceso de Operaciones y de Control de Flotas.",
-      "Mejora de la plataforma comunicacional satelital para la flota de buques de PDVSA.",
-      "Maximiza los recursos y asegura los tiempos de operaciones de los buques apoyando en la gestiÛn de Flota"
-    ],
-    "Municipio": "Libertador (Caracas)",
-    "Estado": "Distrito Capital"
-  },
-  {
-    "CÛdigo": "F1.C0S062337",
-    "Nombre": "OPTIMIZACI”N Y RECUPERACI”N DE LA PLATAFORMA TECNOL”GICA PARA OPERACIONES EN TERMINALES",
-    "AcrÛnimo": "SIGETEMB",
-    "LÌder TÈcnico": "Yeselen Ron",
-    "ContrataciÛn": [
-      {
-        "Actividad": "Bienes",
-        "Partida Presupuestaria": "402990000",
-        "Monto": 1353549,
-        "DescripciÛn": "Servidores"
-      },
-      {
-        "Actividad": "Servicios",
-        "Partida Presupuestaria": "403100300",
-        "Monto": 2071050,
-        "DescripciÛn": "DiseÒo de IntegraciÛn de Sistemas"
-      }
-    ],
-    "AÒos": [
-      {
-        "AÒo": "2024",
-        "Sometido (USD)": 4931677,
-        "Presupuesto Aprobado": 4623844,
-        "Presupuesto Aprobado Ajustado": 4202729,
-        "Real": 300000,
-        "Observaciones": "Incluye infraestructura de radio base marina, Incluye el desarrollo del sistema de gestiÛn de terminales + el sistema SCADA WEB piloto en JOSE+ sistema de monitoreo de buque"
-      }
-    ],
-    "items": [
-      {
-        "Item": "ConsultorÌa Especializada para el desarrollo del Sistema Integrado para las Operaciones en Terminales de Embarques (SIGETEMB)",
-        "Entregable": "",
-        "Monto": 0,
-        "EjecuciÛn Fisica": 0,
-        "Avance": [],
-        "Proximos Pasos": [],
-        "EjecuciÛn Financiera": 0
-      },
-      {
-        "Item": "RecuperaciÛn de la Plataforma de Telecomunicaciones en los Terminales de Embarques (Radios de Banda Marina)",
-        "Entregable": "",
-        "Monto": 0,
-        "EjecuciÛn Fisica": 0,
-        "Avance": [],
-        "Proximos Pasos": [],
-        "EjecuciÛn Financiera": 0
-      },
-      {
-        "Item": "ConsultorÌa Especializada para el desarrollo del Sistema de Monitoreo de Variables en muelles (SCADA WEB)",
-        "Entregable": "",
-        "Monto": 0,
-        "EjecuciÛn Fisica": 0,
-        "Avance": [],
-        "Proximos Pasos": [],
-        "EjecuciÛn Financiera": 0
-      }
-    ],
-    "Alcance": [
-      "Levantamiento de condiciones de la plataforma que soporta las operaciones en los 14 terminales marÌtimos",
-      "AdecuaciÛn, remodelaciÛn y automatizaciÛn de las salas de Control en los 14 Terminales Marinos.",
-      "Desarrollo del Sistema Integrado de GestiÛn para los Terminales de Embarque",
-      "Actualizar los sistemas de comunicaciÛn de radio base, banda marina, sistema de Boceo que se encuentren en obsolescencia  tecnolÛgica.",
-      "AutomatizaciÛn de Terminales. Levantar la IngenierÌa  b·sica para determinar todos los procesos que requieren   control y SupervisiÛn.",
-      "Alojamiento de la SUITE SIGET-EMB en una NUBE."
-    ],
-    "JustificaciÛn": "La VP de CyS Internacional requiere de una propuesta de actualizaciÛn tecnolÛgica en su plataforma de Terminales MarÌtimos de embarques a los fines de optimizar las operaciones que apuntan al cumplimiento de las metas de comercializaciÛn de los crudos y productos para el mercado internacional",
-    "Beneficios": [
-      "Mejora la seguridad en los puertos permitiendo ejecutar las operaciones complejas de manera automatizadas, disminuyendo las posibilidades de siniestros.",
-      "Mejora en las comunicaciones y por ende en los tiempos de respuestas de las operaciones en los terminales de embarques."
-    ],
-    "Municipio": "Libertador (Caracas)",
-    "Estado": "Distrito Capital"
-  },
-  {
-    "CÛdigo": "F1.C0S062210",
-    "Nombre": "SISTEMA INTEGRADO NACIONAL DE INFORMACI”N PARA LA GESTI”N Y MANEJO DE INDICADORES DE COMERCIO Y SUMINISTRO",
-    "AcrÛnimo": "SINIGMI-CyS",
-    "LÌder TÈcnico": "Francisco Su·rez / ”scar MejÌas",
-    "ContrataciÛn": [
-      {
-        "Actividad": "Bienes",
-        "Partida Presupuestaria": "402990000",
-        "Monto": 3500000,
-        "DescripciÛn": "Servidores"
-      },
-      {
-        "Actividad": "Servicios",
-        "Partida Presupuestaria": "403100300",
-        "Monto": 2065407.9,
-        "DescripciÛn": "DiseÒo de IntegraciÛn de Sistemas"
-      }
-    ],
-    "AÒos": [
-      {
-        "AÒo": "2024",
-        "Sometido (USD)": 5857466,
-        "Presupuesto Aprobado": 6093728.61,
-        "Presupuesto Aprobado Ajustado": 5507982.01,
-        "Real": 3855587.41,
-        "Observaciones": "Se ajusta el presupuesto asignado 2024 para cubrir: Recobro de equipos de tecnologÌa de la Sala Situacional de la VPCYSN. OBSEVACIONES: Actualmente en SAP el total de estos montos, est· cargado en la Clase de Costo: 73113001 que corresponde a 'Honorarios y Gastos Profesionales'. Se debe corregir y crear en SAP la clase de costo 74110102  'Materiales / Suministros - No Operacionales' para sustituir la anterior."
-      }
-    ],
-    "items": [
-      {
-        "Item": "ConsultorÌa Especializada para el desarrollo del Sistema Integrado Nacional de Indicadores de GestiÛn y Manejo de Inventarios (SINIGMI-CyS)",
-        "Entregable": "Sistema SINIGMI-CyS v1.0 (Dashboard con los indicadores de gestiÛn preliminares)",
-        "Monto": 0,
-        "EjecuciÛn Fisica": 30,
-        "Avance": [
-          "Levantadas las especificaciones tÈcnicas",
-          "Solicitado el Presupuesto Base para someterlo a la unidad de contrataciÛn del negocio (CyS Nacional)"
+    {
+        "C√≥digo":"F1.C0S062336",
+        "Nombre":"OPTIMIZACI√ìN Y RECUPERACI√ìN DE LA PLATAFORMA TECNOL√ìGICA PARA MERCADO INTERNACIONAL",
+        "Acr√≥nimo":"SIGEMINT",
+        "L√≠der T√©cnico": "Jos√© Casanova",
+        "Contrataci√≥n": [
+            {
+                "Actividad": "Bienes",
+                "Partida Presupuestaria":"402990000",
+                "Monto":541592.06,
+                "Descripci√≥n": "Servidores"
+            },
+            {
+                "Actividad": "Servicios",
+                "Partida Presupuestaria":"403100300",
+                "Monto":3000,
+                "Descripci√≥n": "Dise√±o de Integraci√≥n de Sistemas"
+            }
         ],
-        "Proximos Pasos": [
-          "Aprobar el cambio de alcance del contrato del negocio",
-          "Firmar contrato",
-          "Realizar reuniÛn aclaratoria",
-          "Firma de acta de inicio y acuerdos de confidencialidad",
-          "Iniciar el desarrollo de la aplicaciÛn Sistema SINIGMI-CyS"
+        "A√±os": [
+            {
+                "A√±o":2024,
+                "Sometido (USD)": 569800,
+                "Presupuesto Aprobado":569300,
+                "Presupuesto Aprobado Ajustado":554900,
+                "Real":0,
+                "Observaciones":"Se ajusta el presupuesto: Pasa de 569.300$ (Aprobado) a 288.050$ (Mejor Visi√≥n)"
+            }
         ],
-        "EjecuciÛn Financiera": 0
-      },
-      {
-        "Item": "AdecuaciÛn, Suministro e InstalaciÛn de Equipamiento TecnolÛgico para la Sala Situacional de la VP de Comercio y Suministro Nacional",
-        "Entregable": "Sala situacional adecuada y en funcionamiento tecnolÛgico",
-        "Monto": 0,
-        "EjecuciÛn Fisica": 100,
-        "Avance": [
-          "Pendiente por entrega y cierre administrativo del contrato"
+        "items":[
+            {
+                "Item": "Consultor√≠a Especializada para el desarrollo del Sistema Integrado para la Gesti√≥n de Mercado nacional (SIGEMINT)",
+                "Entregable": "",
+                "Monto": 0,
+                "Ejecuci√≥n Fisica": 0,
+                "Avance":[],
+                "Proximos Pasos": [],
+                "Ejecuci√≥n Financiera": 0
+            },
+            {
+                "Item": "Servicio T√©cnico Especializado para la Automatizaci√≥n del Proceso de Recapitulaci√≥n de T√©rminos y Condiciones de negocio (RECAP)",
+                "Entregable": "",
+                "Monto": 0,
+                "Ejecuci√≥n Fisica": 0,
+                "Avance":[],
+                "Proximos Pasos": [],
+                "Ejecuci√≥n Financiera": 0
+            },
+            {
+                "Item": "Consultor√≠a Especializada para la Sistematizaci√≥n del Proceso de Planificaci√≥n de Mercado Nacional",
+                "Entregable": "",
+                "Monto": 0,
+                "Ejecuci√≥n Fisica": 0,
+                "Avance":[],
+                "Proximos Pasos": [],
+                "Ejecuci√≥n Financiera": 0
+            }
         ],
-        "Proximos Pasos": [
-          "Completar la entrega de la Sala Situacional",
-          "Ejecutar el cierre administrativo del contrato"
+        "fases":[
+            {
+                "nombre":"Optimizar la plataforma",
+                "alcance":[
+                    "Diagn√≥stico y levantamiento de informaci√≥n de la situaci√≥n de la plataforma tecnol√≥gica de la Direcci√≥n Gerencia de Mercado Internacional.",
+                    "Levantamiento de los procesos Compras - Ventas Internacionales.",
+                    "Dise√±o de arquitectura de propuesta para SIGEMINT.",
+                    "Sistematizaci√≥n del proceso de Planificaci√≥n a corto y mediano plazo.",
+                    "Incorporaci√≥n de herramientas de inteligencia de negocio.",
+                    "Aumento de almacenamiento de archivos de CyS Internacional"
+                ]
+            },
+            {
+                "nombre":"Evolucionar la plataforma tecnologica",
+                "alcance":[
+                    "Sistema para el proceso de Recapitulaci√≥n de Condiciones y t√©rminos de negociaci√≥n (RECAP)",
+                    "Sistema que modernice e integre procesos de CyS Internacional (SIGEMINT)."
+                ]
+            }
         ],
-        "EjecuciÛn Financiera": 100
-      },
-      {
-        "Item": "AdecuaciÛn, Suministro e InstalaciÛn de Equipamiento TecnolÛgico para la Sala de Operaciones de la VP de Comercio y Suministro Internacional",
-        "Entregable": "Sala de Operaciones adecuada y en funcionamiento tecnolÛgico",
-        "Monto": 0,
-        "EjecuciÛn Fisica": 50,
-        "Avance": [
-          "En proceso de Procura de los equipos"
+        "Alcance":[
+            "M√≥dulo de Planificaci√≥n: Automatizar√° el proceso del Plan Mensual de Suministro (PMDS) y el Plan Mensual de Tanqueros (PMDT) que ejecuta la gerencia de Planificaci√≥n y Programaci√≥n Operacional de Mercado Internacional.",
+            "M√≥dulo de An√°lisis Comercial: Comprende herramientas para sistematizar los procesos de analisis",
+            "M√≥dulo de Compra-Venta Internacional: Comprende la sistematizaci√≥n asociado a los convenios comerciales de las ventas a plazo",
+            "Implementaci√≥n del alojamiento de los servicios de la SUITE SIGEMINT en una NUBE"
         ],
-        "Proximos Pasos": [
-          "Completar la procura del equipamiento tecnolÛgico",
-          "Instalar el equipamiento tecnolÛgico",
-          "Realizar las pruebas de funcionamiento tecnolÛgico",
-          "Hacer el cierre administrativo del Contrato"
+        "Justificaci√≥n":"La VP de CyS Internacional ha solicitado la revisi√≥n de la Plataforma tecnol√≥gica que apoya a los procesos del negocio para el Mercado Internacional a los fines de poder posicionarse ante los grandes retos para el cumplimiento de las metas del 2024 para la comercializaci√≤n de crudos, productos y especialidades",
+        "Beneficios":[
+            "Agiliza los procesos de planificaci√≥n de suministro del hidrocarburos a clientes internacionales,  al disponer de acceso √°gil a los datos hist√≥ricos para la generaci√≥n de informaci√≥n de los planes.",
+            "Favorece el an√°lisis de negocio y la precisi√≥n en la toma de decisiones, al disponer de diversos recursos tales como la generaci√≥n de reportes en tiempo real.",
+            "Mejora la calidad del dato, debido a que reduce el error humano."
         ],
-        "EjecuciÛn Financiera": 0
-      }
-    ],
-    "Alcance": [],
-    "JustificaciÛn": "",
-    "Beneficios": [],
-    "Municipio": "Libertador (Caracas)",
-    "Estado": "Distrito Capital"
-  }
+        "Situaci√≥n Actual":[
+            "Linea de Negocio AIT para CyS propone  fase I a la gerencia de Planificaci√≥n y Rendici√≥n de cuentas, que se basa en sistematizar el proceso de planificaci√≥n a corto y mediano plazo.",
+            "Tambi√©n se propone de Soluci√≥n Tecnol√≥gica (SIGEMINT) para optimizar e integrar algunos sistemas de apoyo a los procesos de Mercado Internacional.",
+            "Sistema de  Comercializaci√≥n de Hidrocarburos (SCH) requiere una optimizaci√≥n de su arquitectura y migrarlo a tres capas.",
+            "Es necesaria la adquisici√≥n de licenciamiento/sustituci√≥n de la herramienta Market View (marcadores de precios internacionales).",
+            "Se incorporar√° en el corto plazo mayor capacidad de almacenamiento de archivos para la Direcci√≥n Gerencia de Mercado Internacional (ya se adquiri√≥ el servidor para este fin)."
+        ],
+        "√Åreas de Atenci√≥n":[
+            "Indispensable contar con la aprobaci√≥n del negocio en cada etapa del proyecto y su correspondiente disponibilidad presupuestaria.",
+            "Indispensable participaci√≥n activa del negocio (Comercio y Suministro Internacional) en todas las fases del proyecto: conceptualizaci√≥n, desarrollo, pruebas e implementaci√≥n., a trav√©s de la asignaci√≥n de analista o gerente al proyecto.",
+            "Imprescindible la participaci√≥n de Direcci√≥n Ejecutiva de Seguridad Integral (DSI) en cada fase del proyecto."
+        ],
+        "Municipio":"Libertador (Caracas)",
+        "Estado":"Distrito Capital"
+    },
+    {
+        "C√≥digo":"F1.C0S062335",
+        "Nombre":"OPTIMIZACI√ìN Y RECUPERACI√ìN DE LA PLATAFORMA TECNOL√ìGICA PARA TRANSPORTE MARITIMO",
+        "Acr√≥nimo":"SIGETMAR",
+        "L√≠der T√©cnico": "Angel Parra",
+        "Contrataci√≥n": [
+            {
+                "Actividad": "Bienes",
+                "Partida Presupuestaria":"402990000",
+                "Monto":496900,
+                "Descripci√≥n": "Servidores"
+            },
+            {
+                "Actividad": "Servicios",
+                "Partida Presupuestaria":"403100300",
+                "Monto":179000,
+                "Descripci√≥n": "Dise√±o de Integraci√≥n de Sistemas"
+            }
+        ],
+        "A√±os": [
+            {
+                "A√±o":2024,
+                "Sometido (USD)": 738300,
+                "Presupuesto Aprobado":738800,
+                "Presupuesto Aprobado Ajustado":702700,
+                "Real":0,
+                "Observaciones":"Se ajusta presupuesto asignado 734800$ a 671037,93$ /Mejor Visi√≥n)"
+            }
+        ],
+        "items":[
+            {
+                "Item": "Consultor√≠a Especializada para el desarrollo del Sistema Integrado para las Operaciones de Transporte Mar√≠timo (SIGETMAR)",
+                "Entregable": "",
+                "Monto": 0,
+                "Ejecuci√≥n Fisica": 0,
+                "Avance":[],
+                "Proximos Pasos": [],
+                "Ejecuci√≥n Financiera": 0
+            },
+            {
+                "Item": "Recuperaci√≥n de la Plataforma de Telecomunicaciones en la Flota Mar√≠tima",
+                "Entregable": "",
+                "Monto": 0,
+                "Ejecuci√≥n Fisica": 0,
+                "Avance":[],
+                "Proximos Pasos": [],
+                "Ejecuci√≥n Financiera": 0
+            }
+        ],        
+        "fases":[
+            {
+                "nombre":"Recuperaci√≥n de la plataforma tecnol√≥gica",
+                "alcance":[
+                    "Diagn√≥stico de la plataforma Automatizaci√≥n, Inform√°tica, Telecomunicaciones: Levantamiento de informaci√≥n y Diagnostico, Mesas de trabajo para la puesta en operaci√≥n de los sistemas existentes en la plataforma en apoyo a la gesti√≥n de los proceso funcionales.",
+                    "An√°lisis de la soluci√≥n Integral: Validaci√≥n de los procesos funcionales y procedimientos, Levantamiento de requerimientos.",
+                    "Propuesta de la Soluci√≥n Integral: Arquitectura de la soluci√≥n Integral"
+                ]
+            },
+            {
+                "nombre": "Optimizaci√≥n de la plataforma tecnol√≥gica (Arquitectura nube)",
+                "alcance":[
+                    "Validaci√≥n y actualizaci√≥n de los requerimientos: Mejoras de la plataforma, actualizaci√≥n y  mejoras a los sistemas",
+                    "Dise√±o de prototipo"
+                ]
+            },
+            {
+                "nombre":"Evoluci√≥n hacia una plataforma GIS",
+                "alcance":[
+                    "Validaci√≥n y actualizaci√≥n de los requerimientos: Mejoras de la plataforma, actualizaci√≥n y  mejoras a los sistemas",
+                    "Dise√±o de prototipo"
+                ]
+            }
+        ],
+        "Alcance":[
+            "Ajustes al sistema de apoyo operacional (SAO) de buques y las necesidades de los usuarios funcionales de los distintos procesos de la filial.",
+            "Recuperar aplicaciones inherentes a las funciones de apoyo a las operaciones y personal de flota",
+            "Recuperar plataforma de telecom (radios) en los buques.",
+            "Desarrollo de la Suite SIGE-MAR, en su versi√≥n 1",
+            "Optimizaci√≥n (renovaci√≥n) de la plataforma de telecom (radios/enlace satelital) en buques-tierra.",
+            "Implementaci√≥n del alojamiento de los servicios de la SUITE SIGET-MAR en una NUBE"
+        ],
+        "Justificaci√≥n":"La VP de CyS Internacional, a trav√©s de su flial PDV Marina, requiere contar con herramientas tecnol√≥gicas actualizadas que le permitan el control y aseguramiento de la confiabilidad de su proceso de gesti√≥n de la flota, para de esta manera estar en l√≠nea con las normativa de navegaci√≥n y mantenimiento Internacional. De la misma manera, es necesaria la adecuaci√≥n y actualizaci√≥n de los sistemas que apoyan esa gesti√≥n para la el manejo, registro y gesti√≥n del personal de flota, con la finalidad de garantizar la disponibilidad del personal y  maximizar la operatividad de la flota propia de buques de PDVSA que apalanca la distribuci√≥n (cabotaje), la exportaci√≥n e importaci√≥n de crudo y productos, actividad medular en la cadena valor de la corporaci√≥n.",
+        "Beneficios":[
+            "Mejora la gesti√≥n operativa y administrativa en el proceso de Operaciones y de Control de Flotas.",
+            "Mejora de la plataforma comunicacional satelital para la flota de buques de PDVSA.",
+            "Maximiza los recursos y asegura los tiempos de operaciones de los buques apoyando en la gesti√≥n de Flota"
+        ],
+        "Municipio":"Libertador (Caracas)",
+        "Estado":"Distrito Capital"
+    },
+    {
+        "C√≥digo":"F1.C0S062337",
+        "Nombre":"OPTIMIZACI√ìN Y RECUPERACI√ìN DE LA PLATAFORMA TECNOL√ìGICA PARA OPERACIONES EN TERMINALES",
+        "Acr√≥nimo":"SIGETEMB",
+        "L√≠der T√©cnico": "Yeselen Ron",
+        "Contrataci√≥n": [
+            {
+                "Actividad": "Bienes",
+                "Partida Presupuestaria":"402990000",
+                "Monto":1353549,
+                "Descripci√≥n": "Servidores"
+            },
+            {
+                "Actividad": "Servicios",
+                "Partida Presupuestaria":"403100300",
+                "Monto":2071050,
+                "Descripci√≥n": "Dise√±o de Integraci√≥n de Sistemas"
+            }
+        ],
+        "A√±os": [
+            {
+                "A√±o":2024,
+                "Sometido (USD)": 4931677,
+                "Presupuesto Aprobado": 4623844,
+                "Presupuesto Aprobado Ajustado": 4202729,
+                "Real":300000,
+                "Observaciones":"Incluye infraestructura de radio base marina, Incluye el desarrollo del sistema de gesti√≥n de terminales + el sistema SCADA WEB piloto en JOSE+ sistema de monitoreo de buque"
+            }
+        ],
+        "items":[
+            {
+                "Item": "Consultor√≠a Especializada para el desarrollo del Sistema Integrado para las Operaciones en Terminales de Embarques (SIGETEMB)",
+                "Entregable": "",
+                "Monto": 0,
+                "Ejecuci√≥n Fisica": 0,
+                "Avance":[],
+                "Proximos Pasos": [],
+                "Ejecuci√≥n Financiera": 0
+            },
+            {
+                "Item": "Recuperaci√≥n de la Plataforma de Telecomunicaciones en los Terminales de Embarques (Radios de Banda Marina)",
+                "Entregable": "",
+                "Monto": 0,
+                "Ejecuci√≥n Fisica": 0,
+                "Avance":[],
+                "Proximos Pasos": [],
+                "Ejecuci√≥n Financiera": 0
+            },
+            {
+                "Item": "Consultor√≠a Especializada para el desarrollo del Sistema de Monitoreo de Variables en muelles (SCADA WEB)",
+                "Entregable": "",
+                "Monto": 0,
+                "Ejecuci√≥n Fisica": 0,
+                "Avance":[],
+                "Proximos Pasos": [],
+                "Ejecuci√≥n Financiera": 0
+            }
+        ],
+        "Alcance":[
+            "Levantamiento de condiciones de la plataforma que soporta las operaciones en los 14 terminales mar√≠timos",
+            "Adecuaci√≥n, remodelaci√≥n y automatizaci√≥n de las salas de Control en los 14 Terminales Marinos.",
+            "Desarrollo del Sistema Integrado de Gesti√≥n para los Terminales de Embarque",
+            "Actualizar los sistemas de comunicaci√≥n de radio base, banda marina, sistema de Boceo que se encuentren en obsolescencia  tecnol√≥gica.",
+            "Automatizaci√≥n de Terminales. Levantar la Ingenier√≠a  b√°sica para determinar todos los procesos que requieren   control y Supervisi√≥n.",
+            "Alojamiento de la SUITE SIGET-EMB en una NUBE."
+        ],
+        "Justificaci√≥n":"La VP de CyS Internacional requiere de una propuesta de actualizaci√≥n tecnol√≥gica en su plataforma de Terminales Mar√≠timos de embarques a los fines de optimizar las operaciones que apuntan al cumplimiento de las metas de comercializaci√≥n de los crudos y productos para el mercado internacional",
+        "Beneficios":[
+            "Mejora la seguridad en los puertos permitiendo ejecutar las operaciones complejas de manera automatizadas, disminuyendo las posibilidades de siniestros.",
+            "Mejora en las comunicaciones y por ende en los tiempos de respuestas de las operaciones en los terminales de embarques."
+        ],
+        "Municipio":"Libertador (Caracas)",
+        "Estado":"Distrito Capital"
+    },
+    {
+        "C√≥digo":"F1.C0S062210",
+        "Nombre":"SISTEMA INTEGRADO NACIONAL DE INFORMACI√ìN PARA LA GESTI√ìN Y MANEJO DE INDICADORES DE COMERCIO Y SUMINISTRO",
+        "Acr√≥nimo":"SINIGMI-CyS",
+        "L√≠der T√©cnico": "Francisco Su√°rez / √ìscar Mej√≠as",
+        "Contrataci√≥n": [
+            {
+                "Actividad": "Bienes",
+                "Partida Presupuestaria":"402990000",
+                "Monto":3500000,
+                "Descripci√≥n": "Servidores"
+            },
+            {
+                "Actividad": "Servicios",
+                "Partida Presupuestaria":"403100300",
+                "Monto":2065407.90,
+                "Descripci√≥n": "Dise√±o de Integraci√≥n de Sistemas"
+            }
+        ],
+        "A√±os": [
+            {
+                "A√±o":2024,
+                "Sometido (USD)": 5857466,
+                "Presupuesto Aprobado":6093728.61,
+                "Presupuesto Aprobado Ajustado":5507982.01,
+                "Real":3855587.41,
+                "Observaciones":"Se ajusta el presupuesto asignado 2024 para cubrir: Recobro de equipos de tecnolog√≠a de la Sala Situacional de la VPCYSN. OBSEVACIONES: Actualmente en SAP el total de estos montos, est√° cargado en la Clase de Costo: 73113001 que corresponde a 'Honorarios y Gastos Profesionales'. Se debe corregir y crear en SAP la clase de costo 74110102  'Materiales / Suministros - No Operacionales' para sustituir la anterior."
+            }
+        ],
+        "items": [
+            {
+                "Item": "Consultor√≠a Especializada para el desarrollo del Sistema Integrado Nacional de Indicadores de Gesti√≥n y Manejo de Inventarios (SINIGMI-CyS)",
+                "Entregable": "Sistema SINIGMI-CyS v1.0 (Dashboard con los indicadores de gesti√≥n preliminares)",
+                "Monto": 0,
+                "Ejecuci√≥n Fisica": 30,
+                "Avance": [
+                    "Levantadas las especificaciones t√©cnicas",
+                    "Solicitado el Presupuesto Base para someterlo a la unidad de contrataci√≥n del negocio (CyS Nacional)"
+                ],
+                "Proximos Pasos": [
+                    "Aprobar el cambio de alcance del contrato del negocio",
+                    "Firmar contrato",
+                    "Realizar reuni√≥n aclaratoria",
+                    "Firma de acta de inicio y acuerdos de confidencialidad",
+                    "Iniciar el desarrollo de la aplicaci√≥n Sistema SINIGMI-CyS"
+                ],
+                "Ejecuci√≥n Financiera": 0
+            },
+            {
+                "Item": "Adecuaci√≥n, Suministro e Instalaci√≥n de Equipamiento Tecnol√≥gico para la Sala Situacional de la VP de Comercio y Suministro Nacional",
+                "Entregable": "Sala situacional adecuada y en funcionamiento tecnol√≥gico",
+                "Monto": 0,
+                "Ejecuci√≥n Fisica": 100,
+                "Avance":["Pendiente por entrega y cierre administrativo del contrato"],
+                "Proximos Pasos": [
+                    "Completar la entrega de la Sala Situacional",
+                    "Ejecutar el cierre administrativo del contrato"
+                ],
+                "Ejecuci√≥n Financiera": 100
+            },
+            {
+                "Item": "Adecuaci√≥n, Suministro e Instalaci√≥n de Equipamiento Tecnol√≥gico para la Sala de Operaciones de la VP de Comercio y Suministro Internacional",
+                "Entregable": "Sala de Operaciones adecuada y en funcionamiento tecnol√≥gico",
+                "Monto": 0,
+                "Ejecuci√≥n Fisica": 50,
+                "Avance":["En proceso de Procura de los equipos"],
+                "Proximos Pasos": [
+                    "Completar la procura del equipamiento tecnol√≥gico",
+                    "Instalar el equipamiento tecnol√≥gico",
+                    "Realizar las pruebas de funcionamiento tecnol√≥gico",
+                    "Hacer el cierre administrativo del Contrato"
+                ],
+                "Ejecuci√≥n Financiera": 0
+            }
+        ],
+        "Alcance":[
+        ],
+        "Justificaci√≥n":"",
+        "Beneficios":[
+        ],
+        "Municipio":"Libertador (Caracas)",
+        "Estado":"Distrito Capital"
+    }
 ]
