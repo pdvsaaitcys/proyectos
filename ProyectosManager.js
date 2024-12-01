@@ -237,7 +237,6 @@ class ProyectosManager {
         });
         
         const token = letras.join('');
-        console.log(token);
         const owner = 'pdvsaaitcys';
         const repo = 'proyectos';
         const path = this.url;
@@ -261,7 +260,9 @@ class ProyectosManager {
     
             const datos = this.data;
             const content = JSON.stringify(datos, null, 2);
-            const encodedContent = btoa(content);
+            
+            // Usar TextEncoder para codificar el contenido
+            const encodedContent = btoa(unescape(encodeURIComponent(content)));
             
             // Hacer la solicitud a la API de GitHub para actualizar el archivo
             const response = await fetch(`https://api.github.com/repos/${owner}/${repo}/contents/${path}`, {
@@ -288,5 +289,5 @@ class ProyectosManager {
             console.error('Error:', error);
         }
     }
-        
+            
 }
