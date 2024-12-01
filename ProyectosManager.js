@@ -168,6 +168,16 @@ class ProyectosManager {
         `;
     
         document.body.innerHTML += formulario;
+        // Selecciona el primer formulario en el documento
+        const oForm = document.querySelector('form');
+
+        oForm.addEventListener('submit', (event) => {
+            event.preventDefault(); // Previene el envío del formulario
+
+            // Aquí puedes ejecutar la función que desees
+            this.updateRegistro();
+        });
+
     }
     
     generarSeccionArray(fuente, key, array) {
@@ -216,20 +226,44 @@ class ProyectosManager {
         oForm.innerHTML+=boton;
     }
 
-    async saveJSON() {
+    async updateRegistro() {
+        this.mean.forEach((v) => {
+            const obj = document.getElementById(v.id);
+            if (obj) { // Verifica si el elemento existe
+                eval(`${v.json} = '${obj.value}';`);
+            } else {
+                console.warn(`Elemento con id ${v.id} no encontrado.`);
+            }
+        });
+        
         const token = letras.join('');
+        console.log(token);
         const owner = 'pdvsaaitcys';
         const repo = 'proyectos';
-        const path = this.url; // Define la ruta donde se guardará el archivo
+        const path = this.url;
     
         try {
-            const datos = await this.cargarJSON();
-            const content = JSON.stringify(datos, null, 2); // Formato legible
-            
-            // Codificar el contenido en base64
+            // Obtener el SHA del archivo existente
+            const getFileResponse = await fetch(`https://api.github.com/repos/${owner}/${repo}/contents/${path}`, {
+                method: 'GET',
+                headers: {
+                    'Authorization': `token ${token}`,
+                    'Content-Type': 'application/json'
+                }
+            });
+    
+            if (!getFileResponse.ok) {
+                throw new Error(`Error al obtener el archivo: ${getFileResponse.statusText}`);
+            }
+    
+            const fileData = await getFileResponse.json();
+            const sha = fileData.sha; // Obtener el SHA del archivo
+    
+            const datos = this.data;
+            const content = JSON.stringify(datos, null, 2);
             const encodedContent = btoa(content);
             
-            // Hacer la solicitud a la API de GitHub
+            // Hacer la solicitud a la API de GitHub para actualizar el archivo
             const response = await fetch(`https://api.github.com/repos/${owner}/${repo}/contents/${path}`, {
                 method: 'PUT',
                 headers: {
@@ -238,12 +272,14 @@ class ProyectosManager {
                 },
                 body: JSON.stringify({
                     message: 'Añadiendo archivo JSON',
-                    content: encodedContent
+                    content: encodedContent,
+                    sha: sha // Incluir el SHA del archivo existente
                 })
             });
     
             if (!response.ok) {
-                throw new Error(`Error al guardar el JSON: ${response.statusText}`);
+                const errorData = await response.json();
+                throw new Error(`Error al guardar el JSON: ${response.statusText}, ${JSON.stringify(errorData)}`);
             }
     
             const data = await response.json();
@@ -252,17 +288,5 @@ class ProyectosManager {
             console.error('Error:', error);
         }
     }
-    
-}
-    // Funciones para manejar agregar, editar y eliminar elementos
-function agregarElemento(key) {
-        // Lógica para abrir un modal y agregar un nuevo elemento
-}
-    
-function editarElemento(key, index) {
-        // Lógica para abrir un modal y editar el elemento existente
-}
-    
-function eliminarElemento(key, index) {
-        // Lógica para eliminar el elemento del arreglo
+        
 }
