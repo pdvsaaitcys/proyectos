@@ -50,7 +50,6 @@
     window.onload = async () => {
       await proyectos.checkFields(oForm);
       const checkboxes = document.querySelectorAll('form input[type="checkbox"]');
-      console.log({checkboxes});
       checkboxes.forEach(checkbox => {
           checkbox.addEventListener('change', checkboxChanged);
       });
