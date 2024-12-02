@@ -319,7 +319,7 @@
         "Presupuesto Aprobado": 6093728.61,
         "Presupuesto Aprobado Ajustado": 5507982.01,
         "Real": 3855587.41,
-        "Observaciones": "Se ajusta el presupuesto asignado 2024 para cubrir: Recobro de equipos de tecnología de la Sala Situacional de la VPCYSN. OBSEVACIONES: Actualmente en SAP el total de estos montos, está cargado en la Clase de Costo: 73113001 que corresponde a 'Honorarios y Gastos Profesionales'. Se debe corregir y crear en SAP la clase de costo 74110102  'Materiales / Suministros - No Operacionales' para sustituir la anterior."
+        "Observaciones": "Se ajusta el presupuesto asignado 2024 para cubrir: Recobro de equipos de tecnología de la Sala Situacional de la VPCYSN. OBSEVACIONES: Actualmente en SAP el total de estos montos, está cargado en la Clase de Costo: 73113001 que corresponde a \"Honorarios y Gastos Profesionales\". Se debe corregir y crear en SAP la clase de costo 74110102  \"Materiales / Suministros - No Operacionales\" para sustituir la anterior."
       }
     ],
     "items": [
