@@ -13,6 +13,8 @@ class ProyectosManager {
             if (!response.ok) {
                 throw new Error(`Error al cargar el JSON: ${response.statusText}`);
             }
+            return await response.json();
+            /*
             const data = await response.text();
             console.log({data});
             const dataDecrypted = decrypt_data(data);
@@ -20,6 +22,7 @@ class ProyectosManager {
             const dataJson = JSON.parse(dataDecrypted);
             console.log({dataJson});
             return dataJson;
+            */
         }   else    {
             return this.data;
         }
