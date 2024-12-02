@@ -20,14 +20,14 @@ const esMovil = () => {
   return anchoVentana < 768; // Umbral para dispositivos móviles
 }
 const encrypt_data = (string) => {
-  // return string;
+  return string;
   string = unescape(encodeURIComponent(string)); 
   var newString = '', char, nextChar, combinedCharCode; 
   for (var i = 0; i < string.length; i += 2) {
       char = string.charCodeAt(i); 
       if ((i + 1) < string.length) {
           nextChar = string.charCodeAt(i + 1) - 31;
-          combinedCharCode = char + "" + nextChar.toLocaleString('en', { minimumIntegerDigits: 2 });
+          combinedCharCode = char + "" + nextChar.toLocaleString('es', { minimumIntegerDigits: 2 });
           newString += String.fromCharCode(parseInt(combinedCharCode, 10));
       } else {
           newString += string.charAt(i); 
@@ -37,7 +37,7 @@ const encrypt_data = (string) => {
 }
 
 const decrypt_data = (string) => {
-  // return string;
+  return string;
   var newString = '', char, codeStr, firstCharCode, lastCharCode;
   string = string.match(/.{1,4}/g).reduce((acc,char)=>acc+String.fromCharCode(parseInt(char, 16)),"");
   for (var i = 0; i < string.length; i++) {
