@@ -12,7 +12,7 @@ class ProyectosManager {
             if (!response.ok) {
                 throw new Error(`Error al cargar el JSON: ${response.statusText}`);
             }
-            return await response.json();    
+            return await decrypt_data(response).json();
         }   else    {
             return this.data;
         }
@@ -239,7 +239,7 @@ class ProyectosManager {
         const token = letras.join('');
         const owner = 'pdvsaaitcys';
         const repo = 'proyectos';
-        const path = this.url;
+        const path = this.url.split('/').pop();
     
         try {
             // Obtener el SHA del archivo existente
@@ -259,13 +259,13 @@ class ProyectosManager {
             const sha = fileData.sha; // Obtener el SHA del archivo
     
             const datos = this.data;
-            const content = JSON.stringify(datos, null, 2);
+            const content = encrypt_data(JSON.stringify(datos, null, 2));
             
             // Usar TextEncoder para codificar el contenido
             const encodedContent = btoa(unescape(encodeURIComponent(content)));
             
             // Hacer la solicitud a la API de GitHub para actualizar el archivo
-            const response = await fetch(`https://api.github.com/repos/${owner}/${repo}/contents/${path}`, {
+            const response = await fetch(`https://api.github.com/repos/${owner}/${repo}/contents/${path}.txt`, {
                 method: 'PUT',
                 headers: {
                     'Authorization': `token ${token}`,
@@ -289,5 +289,4 @@ class ProyectosManager {
             console.error('Error:', error);
         }
     }
-            
 }
