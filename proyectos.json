@@ -35,7 +35,7 @@
         "Monto": "0",
         "Ejecución Fisica": "0",
         "Avance": [],
-        "Proximos Pasos": [],
+        "Próximos Pasos": [],
         "Ejecución Financiera": "0"
       },
       {
@@ -44,7 +44,7 @@
         "Monto": "0",
         "Ejecución Fisica": "0",
         "Avance": [],
-        "Proximos Pasos": [],
+        "Próximos Pasos": [],
         "Ejecución Financiera": "0"
       },
       {
@@ -53,14 +53,14 @@
         "Monto": "0",
         "Ejecución Fisica": "0",
         "Avance": [],
-        "Proximos Pasos": [],
+        "Próximos Pasos": [],
         "Ejecución Financiera": "0"
       }
     ],
     "fases": [
       {
-        "nombre": "Optimizar la plataforma",
-        "alcance": [
+        "Nombre": "Optimizar la plataforma",
+        "Alcance": [
           "Diagnóstico y levantamiento de información de la situación de la plataforma tecnológica de la Dirección Gerencia de Mercado Internacional.",
           "Levantamiento de los procesos Compras - Ventas Internacionales.",
           "Diseño de arquitectura de propuesta para SIGEMINT.",
@@ -70,8 +70,8 @@
         ]
       },
       {
-        "nombre": "Evolucionar la plataforma tecnologica",
-        "alcance": [
+        "Nombre": "Evolucionar la plataforma tecnologica",
+        "Alcance": [
           "Sistema para el proceso de Recapitulación de Condiciones y términos de negociación (RECAP)",
           "Sistema que modernice e integre procesos de CyS Internacional (SIGEMINT)."
         ]
@@ -113,23 +113,23 @@
       {
         "Actividad": "Bienes",
         "Partida Presupuestaria": "402990000",
-        "Monto": 496900,
+        "Monto": "496900",
         "Descripción": "Servidores"
       },
       {
         "Actividad": "Servicios",
         "Partida Presupuestaria": "403100300",
-        "Monto": 179000,
+        "Monto": "179000",
         "Descripción": "Diseño de Integración de Sistemas"
       }
     ],
     "Años": [
       {
-        "Año": 2024,
-        "Sometido (USD)": 738300,
-        "Presupuesto Aprobado": 738800,
-        "Presupuesto Aprobado Ajustado": 702700,
-        "Real": 0,
+        "Año": "2024",
+        "Sometido (USD)": "738300",
+        "Presupuesto Aprobado": "738800",
+        "Presupuesto Aprobado Ajustado": "702700",
+        "Real": "0",
         "Observaciones": "Se ajusta presupuesto asignado 734800$ a 671037,93$ /Mejor Visión)"
       }
     ],
@@ -137,41 +137,41 @@
       {
         "Item": "Consultoría Especializada para el desarrollo del Sistema Integrado para las Operaciones de Transporte Marítimo (SIGETMAR)",
         "Entregable": "",
-        "Monto": 0,
-        "Ejecución Fisica": 0,
+        "Monto": "0",
+        "Ejecución Fisica": "0",
         "Avance": [],
-        "Proximos Pasos": [],
-        "Ejecución Financiera": 0
+        "Próximos Pasos": [],
+        "Ejecución Financiera": "0"
       },
       {
         "Item": "Recuperación de la Plataforma de Telecomunicaciones en la Flota Marítima",
         "Entregable": "",
-        "Monto": 0,
-        "Ejecución Fisica": 0,
+        "Monto": "0",
+        "Ejecución Fisica": "0",
         "Avance": [],
-        "Proximos Pasos": [],
-        "Ejecución Financiera": 0
+        "Próximos Pasos": [],
+        "Ejecución Financiera": "0"
       }
     ],
     "fases": [
       {
-        "nombre": "Recuperación de la plataforma tecnológica",
-        "alcance": [
+        "Nombre": "Recuperación de la plataforma tecnológica",
+        "Alcance": [
           "Diagnóstico de la plataforma Automatización, Informática, Telecomunicaciones: Levantamiento de información y Diagnostico, Mesas de trabajo para la puesta en operación de los sistemas existentes en la plataforma en apoyo a la gestión de los proceso funcionales.",
           "Análisis de la solución Integral: Validación de los procesos funcionales y procedimientos, Levantamiento de requerimientos.",
           "Propuesta de la Solución Integral: Arquitectura de la solución Integral"
         ]
       },
       {
-        "nombre": "Optimización de la plataforma tecnológica (Arquitectura nube)",
-        "alcance": [
+        "Nombre": "Optimización de la plataforma tecnológica (Arquitectura nube)",
+        "Alcance": [
           "Validación y actualización de los requerimientos: Mejoras de la plataforma, actualización y  mejoras a los sistemas",
           "Diseño de prototipo"
         ]
       },
       {
-        "nombre": "Evolución hacia una plataforma GIS",
-        "alcance": [
+        "Nombre": "Evolución hacia una plataforma GIS",
+        "Alcance": [
           "Validación y actualización de los requerimientos: Mejoras de la plataforma, actualización y  mejoras a los sistemas",
           "Diseño de prototipo"
         ]
@@ -191,8 +191,18 @@
       "Mejora de la plataforma comunicacional satelital para la flota de buques de PDVSA.",
       "Maximiza los recursos y asegura los tiempos de operaciones de los buques apoyando en la gestión de Flota"
     ],
-    "Situación Actual": [],
-    "Áreas de Atención": [],
+    "Situación Actual": [
+      "Primera situación",
+      "Segunda situación",
+      "",
+      ""
+    ],
+    "Áreas de Atención": [
+      "",
+      "",
+      "",
+      ""
+    ],
     "Municipio": "Libertador (Caracas)",
     "Estado": "Distrito Capital"
   },
@@ -232,7 +242,7 @@
         "Monto": "0",
         "Ejecución Fisica": "0",
         "Avance": [],
-        "Proximos Pasos": [],
+        "Próximos Pasos": [],
         "Ejecución Financiera": "0"
       },
       {
@@ -241,7 +251,7 @@
         "Monto": "0",
         "Ejecución Fisica": "0",
         "Avance": [],
-        "Proximos Pasos": [],
+        "Próximos Pasos": [],
         "Ejecución Financiera": "0"
       },
       {
@@ -250,7 +260,7 @@
         "Monto": "0",
         "Ejecución Fisica": "0",
         "Avance": [],
-        "Proximos Pasos": [],
+        "Próximos Pasos": [],
         "Ejecución Financiera": "0"
       }
     ],
@@ -268,8 +278,18 @@
       "Mejora la seguridad en los puertos permitiendo ejecutar las operaciones complejas de manera automatizadas, disminuyendo las posibilidades de siniestros.",
       "Mejora en las comunicaciones y por ende en los tiempos de respuestas de las operaciones en los terminales de embarques."
     ],
-    "Situación Actual": [],
-    "Áreas de Atención": [],
+    "Situación Actual": [
+      "",
+      "",
+      "",
+      ""
+    ],
+    "Áreas de Atención": [
+      "",
+      "",
+      "",
+      ""
+    ],
     "Municipio": "Libertador (Caracas)",
     "Estado": "Distrito Capital"
   },
@@ -312,7 +332,7 @@
           "Levantadas las especificaciones técnicas",
           "Solicitado el Presupuesto Base para someterlo a la unidad de contratación del negocio (CyS Nacional)"
         ],
-        "Proximos Pasos": [
+        "Próximos Pasos": [
           "Aprobar el cambio de alcance del contrato del negocio",
           "Firmar contrato",
           "Realizar reunión aclaratoria",
@@ -329,7 +349,7 @@
         "Avance": [
           "Pendiente por entrega y cierre administrativo del contrato"
         ],
-        "Proximos Pasos": [
+        "Próximos Pasos": [
           "Completar la entrega de la Sala Situacional",
           "Ejecutar el cierre administrativo del contrato"
         ],
@@ -343,7 +363,7 @@
         "Avance": [
           "En proceso de Procura de los equipos"
         ],
-        "Proximos Pasos": [
+        "Próximos Pasos": [
           "Completar la procura del equipamiento tecnológico",
           "Instalar el equipamiento tecnológico",
           "Realizar las pruebas de funcionamiento tecnológico",
@@ -356,8 +376,18 @@
     "Alcance": [],
     "Justificación": "",
     "Beneficios": [],
-    "Situación Actual": [],
-    "Áreas de Atención": [],
+    "Situación Actual": [
+      "",
+      "",
+      "",
+      ""
+    ],
+    "Áreas de Atención": [
+      "",
+      "",
+      "",
+      ""
+    ],
     "Municipio": "Libertador (Caracas)",
     "Estado": "Distrito Capital"
   }
