@@ -232,8 +232,8 @@ class ProyectosManager {
             <label class="form-check-label" for="${field}">${field}</label>
         </div>`);
         oForm.innerHTML+=arrayChk.join('');
-        const boton = `<button type="submit" class="btn btn-primary">Enviar</button>`;
-        oForm.innerHTML+=boton;
+//        const boton = `<button type="submit" class="btn btn-primary">Enviar</button>`;
+//        oForm.innerHTML+=boton;
     }
 
     async updateRegistro() {
