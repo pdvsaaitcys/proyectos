@@ -1,6 +1,7 @@
 class ProyectosManager {
     constructor(url) {
-        this.url = url+'.txt';
+        this.url = url;
+        // this.url = url+'.txt';
         this.data = [];
         this.pos = -1;
         this.mean = [];
@@ -271,7 +272,7 @@ class ProyectosManager {
             const encodedContent = btoa(unescape(encodeURIComponent(content)));
             
             // Hacer la solicitud a la API de GitHub para actualizar el archivo
-            const response = await fetch(`https://api.github.com/repos/${owner}/${repo}/contents/${path}.txt`, {
+            const response = await fetch(`https://api.github.com/repos/${owner}/${repo}/contents/${path}`, {
                 method: 'PUT',
                 headers: {
                     'Authorization': `token ${token}`,
