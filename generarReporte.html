@@ -46,12 +46,15 @@
     const url = 'https://pdvsaaitcys.github.io/proyectos/proyectos.json'; // Reemplaza con la URL de tu archivo JSON
     const proyectos = new ProyectosManager(url);
     const oForm = document.getElementById('form');
-    proyectos.checkFields(oForm);
-    const checkboxes = document.querySelectorAll('form input[type="checkbox"]');
-    console.log({checkboxes});
-    checkboxes.forEach(checkbox => {
-        checkbox.addEventListener('change', checkboxChanged);
-    });
+
+    window.onload = async () => {
+      await proyectos.checkFields(oForm);
+      const checkboxes = document.querySelectorAll('form input[type="checkbox"]');
+      console.log({checkboxes});
+      checkboxes.forEach(checkbox => {
+          checkbox.addEventListener('change', checkboxChanged);
+      });
+    }
     const checkboxChanged = ()  =>  {
         const títuloReporte = oForm.tituloReporte.value;
         const checkboxes = oForm.querySelectorAll('input[type="checkbox"]:checked');
