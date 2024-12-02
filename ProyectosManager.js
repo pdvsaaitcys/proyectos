@@ -27,7 +27,7 @@ class ProyectosManager {
         return this.pos >= 0 ? this.data[this.pos] : null;
     }
 
-    mostrarContenidoRegistro(registro, mostrarCampos = false, campos = []) {
+    mostrarContenidoRegistro(registro, id, mostrarCampos = false, campos = []) {
         if (!registro) {
             document.body.innerHTML += '<p>No hay registro para mostrar.</p>';
             return;
@@ -43,7 +43,7 @@ class ProyectosManager {
             }
         }
         contenido += '</ul></div>';
-        document.body.innerHTML += contenido;
+        document.getElementById(id).innerHTML=contenido;
     }
 
     formatearValor(key, value) {
@@ -64,7 +64,7 @@ class ProyectosManager {
         return `<${etiqueta}>${Object.entries(obj).map(([key, value]) => `<li>${etiqueta === 'ol' ?'':`<strong>${key}:</strong>`} ${this.formatearValor(key, value)}</li>`).join('')}</${etiqueta}>`;
     }
 
-    async generarTabla(titulo, campos) {
+    async generarTabla(titulo, campos, id) {
         this.data = await this.cargarJSON();
         let tabla = `
             <div class="container mt-4">
@@ -86,14 +86,14 @@ class ProyectosManager {
                 </table>
             </div>
         `;
-        document.body.innerHTML += tabla;
+        document.getElementById(id).innerHTML=tabla;
     }
 
-    async main(codigoBuscado, mostrarCampos = false, campos = []) {
+    async mostrarFicha(codigoBuscado, id, mostrarCampos = false, campos = []) {
         try {
             this.data = await this.cargarJSON();
             const registro = this.buscarRegistroPorCodigo(codigoBuscado);
-            this.mostrarContenidoRegistro(registro, mostrarCampos, campos);
+            this.mostrarContenidoRegistro(registro, id, mostrarCampos, campos);
         } catch (error) {
             console.error(error);
         }

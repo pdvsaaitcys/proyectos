@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
   <head>
     <title>AIT LS CyS Gestion de Proyectos</title>
     <meta charset="utf-8">
@@ -16,13 +16,30 @@
 <script>addContentHTML('navbar','navbar.html');</script>
 
 <div class="container mt-3">
-    <h3>Generador de reporte</h3>
-    <form id="form">
-        <div class="mb-3 mt-3">
-            <label for="titulo-reporte" class="form-label">Título del Reporte</label>
-            <input type="text" class="form-control" id="titulo-reporte" placeholder="Titulo del Reporte" name="tituloReporte">
+    <ul class="nav nav-pills" role="tablist">
+      <li class="nav-item">
+        <a class="nav-link active" data-bs-toggle="pill" href="#configurar">Configurar</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" data-bs-toggle="pill" href="#resultado">Resultados</a>
+      </li>
+    </ul>
+  
+    <!-- Tab panes -->
+    <div class="tab-content">
+        <div id="configurar" class="container tab-pane active"><br>
+            <h3>Generador de reporte</h3>
+            <form id="form">
+                <div class="mb-3 mt-3">
+                    <label for="titulo-reporte" class="form-label">Título del Reporte</label>
+                    <input type="text" class="form-control" id="titulo-reporte" placeholder="Titulo del Reporte" name="tituloReporte">
+                </div>
+            </form>
         </div>
-    </form>
+        <div id="resultado" class="container tab-pane fade"><br>
+            <div id="resultado-reporte"></div>
+        </div>
+    </div>
 </div>
 
 <script>
@@ -35,7 +52,7 @@
         const títuloReporte = oForm.tituloReporte.value;
         const checkboxes = oForm.querySelectorAll('input[type="checkbox"]:checked');
         const selectedFields = Array.from(checkboxes).map(checkbox => checkbox.value);
-        proyectos.generarTabla(títuloReporte, selectedFields);
+        proyectos.generarTabla(títuloReporte, selectedFields, 'resultado-reporte');
     };
 </script>
 

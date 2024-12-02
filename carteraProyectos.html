@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
   <title>AIT LS CyS Gestion de Proyectos</title>
   <meta charset="utf-8">
@@ -12,6 +12,7 @@
 </head>
 <body>
     <div id="navbar"></div>
+    <div id="cartera-proyectos"></div>
 <script>
 addContentHTML('navbar','navbar.html');
 // Uso de la clase
@@ -24,7 +25,7 @@ if (esMovil()) {
 }
 const proyectos = new ProyectosManager(url);
 // Generar tabla
-proyectos.generarTabla('Cartera de Proyectos', camposTabla);
+proyectos.generarTabla('Cartera de Proyectos', camposTabla, 'cartera-proyectos');
 </script>
 </body>
 </html>

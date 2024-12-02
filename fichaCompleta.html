@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
   <title>AIT LS CyS Gestion de Proyectos</title>
   <meta charset="utf-8">
@@ -12,13 +12,14 @@
 </head>
 <body>
     <div id="navbar"></div>
+    <div id="ficha-completa"></div>
 <script>
 addContentHTML('navbar','navbar.html');
 // Uso de la clase
 const url = 'proyectos.json'; // Reemplaza con la URL de tu archivo JSON
 const codigoProyecto = getFieldFromLocation('codigo'); // Reemplaza 'nombreCampo' con el campo que desees
 const proyectos = new ProyectosManager(url);
-proyectos.main(codigoProyecto);
+proyectos.mostrarFicha(codigoProyecto,"ficha-completa");
 </script>
 </body>
 </html>
