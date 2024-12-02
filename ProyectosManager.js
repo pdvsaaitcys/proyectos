@@ -9,6 +9,7 @@ class ProyectosManager {
     async cargarJSON() {
         if (this.data.length === 0) {
             const response = await fetch(this.url);
+            console.log({response});
             if (!response.ok) {
                 throw new Error(`Error al cargar el JSON: ${response.statusText}`);
             }
