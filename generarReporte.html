@@ -47,6 +47,18 @@
     const proyectos = new ProyectosManager(url);
     const oForm = document.getElementById('form');
     proyectos.checkFields(oForm);
+    const checkboxes = document.querySelectorAll('form input[type="checkbox"]');
+    console.log({checkboxes});
+    checkboxes.forEach(checkbox => {
+        checkbox.addEventListener('change', checkboxChanged);
+    });
+    const checkboxChanged = ()  =>  {
+        const títuloReporte = oForm.tituloReporte.value;
+        const checkboxes = oForm.querySelectorAll('input[type="checkbox"]:checked');
+        const selectedFields = Array.from(checkboxes).map(checkbox => checkbox.value);
+        proyectos.generarTabla(títuloReporte, selectedFields, 'resultado-reporte');      
+    }
+  /*
     oForm.onsubmit = function(event) {
         event.preventDefault(); // Inhibe el envío del formulario
         const títuloReporte = oForm.tituloReporte.value;
@@ -54,6 +66,7 @@
         const selectedFields = Array.from(checkboxes).map(checkbox => checkbox.value);
         proyectos.generarTabla(títuloReporte, selectedFields, 'resultado-reporte');
     };
+    */
 </script>
 
 </body>
