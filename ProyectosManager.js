@@ -1,6 +1,6 @@
 class ProyectosManager {
     constructor(url) {
-        this.url = url;
+        this.url = url+'.txt';
         this.data = [];
         this.pos = -1;
         this.mean = [];
