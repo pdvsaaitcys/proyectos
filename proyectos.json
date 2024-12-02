@@ -8,23 +8,23 @@
       {
         "Actividad": "Bienes",
         "Partida Presupuestaria": "402990000",
-        "Monto": 541592.06,
+        "Monto": "541592.06",
         "Descripción": "Servidores"
       },
       {
         "Actividad": "Servicios",
         "Partida Presupuestaria": "403100300",
-        "Monto": 3000,
+        "Monto": "3000",
         "Descripción": "Diseño de Integración de Sistemas"
       }
     ],
     "Años": [
       {
-        "Año": 2024,
-        "Sometido (USD)": 569800,
-        "Presupuesto Aprobado": 569300,
-        "Presupuesto Aprobado Ajustado": 554900,
-        "Real": 0,
+        "Año": "2024",
+        "Sometido (USD)": "569800",
+        "Presupuesto Aprobado": "569300",
+        "Presupuesto Aprobado Ajustado": "554900",
+        "Real": "0",
         "Observaciones": "Se ajusta el presupuesto: Pasa de 569.300$ (Aprobado) a 288.050$ (Mejor Visión)"
       }
     ],
@@ -32,29 +32,29 @@
       {
         "Item": "Consultoría Especializada para el desarrollo del Sistema Integrado para la Gestión de Mercado nacional (SIGEMINT)",
         "Entregable": "",
-        "Monto": 0,
-        "Ejecución Fisica": 0,
+        "Monto": "0",
+        "Ejecución Fisica": "0",
         "Avance": [],
         "Proximos Pasos": [],
-        "Ejecución Financiera": 0
+        "Ejecución Financiera": "0"
       },
       {
         "Item": "Servicio Técnico Especializado para la Automatización del Proceso de Recapitulación de Términos y Condiciones de negocio (RECAP)",
         "Entregable": "",
-        "Monto": 0,
-        "Ejecución Fisica": 0,
+        "Monto": "0",
+        "Ejecución Fisica": "0",
         "Avance": [],
         "Proximos Pasos": [],
-        "Ejecución Financiera": 0
+        "Ejecución Financiera": "0"
       },
       {
         "Item": "Consultoría Especializada para la Sistematización del Proceso de Planificación de Mercado Nacional",
         "Entregable": "",
-        "Monto": 0,
-        "Ejecución Fisica": 0,
+        "Monto": "0",
+        "Ejecución Fisica": "0",
         "Avance": [],
         "Proximos Pasos": [],
-        "Ejecución Financiera": 0
+        "Ejecución Financiera": "0"
       }
     ],
     "fases": [
@@ -90,7 +90,7 @@
       "Mejora la calidad del dato, debido a que reduce el error humano."
     ],
     "Situación Actual": [
-      "Linea de Negocio AIT para CyS propone  fase I a la gerencia de Planificación y Rendición de cuentas, que se basa en sistematizar el proceso de planificación a corto y mediano plazo.",
+      "Línea de Negocio AIT para CyS propone  fase I a la gerencia de Planificación y Rendición de cuentas, que se basa en sistematizar el proceso de planificación a corto y mediano plazo.",
       "También se propone de Solución Tecnológica (SIGEMINT) para optimizar e integrar algunos sistemas de apoyo a los procesos de Mercado Internacional.",
       "Sistema de  Comercialización de Hidrocarburos (SCH) requiere una optimización de su arquitectura y migrarlo a tres capas.",
       "Es necesaria la adquisición de licenciamiento/sustitución de la herramienta Market View (marcadores de precios internacionales).",
@@ -191,6 +191,8 @@
       "Mejora de la plataforma comunicacional satelital para la flota de buques de PDVSA.",
       "Maximiza los recursos y asegura los tiempos de operaciones de los buques apoyando en la gestión de Flota"
     ],
+    "Situación Actual": [],
+    "Áreas de Atención": [],
     "Municipio": "Libertador (Caracas)",
     "Estado": "Distrito Capital"
   },
@@ -252,6 +254,7 @@
         "Ejecución Financiera": "0"
       }
     ],
+    "fases": [],
     "Alcance": [
       "Levantamiento de condiciones de la plataforma que soporta las operaciones en los 14 terminales marítimos",
       "Adecuación, remodelación y automatización de las salas de Control en los 14 Terminales Marinos.",
@@ -265,6 +268,8 @@
       "Mejora la seguridad en los puertos permitiendo ejecutar las operaciones complejas de manera automatizadas, disminuyendo las posibilidades de siniestros.",
       "Mejora en las comunicaciones y por ende en los tiempos de respuestas de las operaciones en los terminales de embarques."
     ],
+    "Situación Actual": [],
+    "Áreas de Atención": [],
     "Municipio": "Libertador (Caracas)",
     "Estado": "Distrito Capital"
   },
@@ -347,9 +352,12 @@
         "Ejecución Financiera": 0
       }
     ],
+    "fases": [],
     "Alcance": [],
     "Justificación": "",
     "Beneficios": [],
+    "Situación Actual": [],
+    "Áreas de Atención": [],
     "Municipio": "Libertador (Caracas)",
     "Estado": "Distrito Capital"
   }
