@@ -14,7 +14,9 @@ class ProyectosManager {
             }
             const data = await response.text();
             console.log({data});
-            const dataJson = JSON.parse(decrypt_data(data));
+            const dataDecrypted = decrypt_data(data);
+            console.log({dataDecrypted});
+            const dataJson = JSON.parse(dataDecrypted);
             console.log({dataJson});
             return dataJson;
         }   else    {
