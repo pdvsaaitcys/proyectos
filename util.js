@@ -37,7 +37,7 @@ const encrypt_data = (string) => {
 }
 
 const decrypt_data = (string) => {
-  return string;
+  // return string;
   var newString = '', char, codeStr, firstCharCode, lastCharCode;
   string = string.match(/.{1,4}/g).reduce((acc,char)=>acc+String.fromCharCode(parseInt(char, 16)),"");
   for (var i = 0; i < string.length; i++) {
