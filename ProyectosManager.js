@@ -269,7 +269,8 @@ class ProyectosManager {
             const sha = fileData.sha; // Obtener el SHA del archivo
     
             const datos = this.data;
-            const content = encrypt_data(JSON.stringify(datos, null, 2));
+            const content = JSON.stringify(datos, null, 2);
+//            const content = encrypt_data(JSON.stringify(datos, null, 2));
             
             // Usar TextEncoder para codificar el contenido
             const encodedContent = btoa(unescape(encodeURIComponent(content)));
