@@ -20,7 +20,7 @@ const esMovil = () => {
   return anchoVentana < 768; // Umbral para dispositivos móviles
 }
 const encrypt_data = (string) => {
-  return string;
+  // return string;
   string = unescape(encodeURIComponent(string)); 
   var newString = '', char, nextChar, combinedCharCode; 
   for (var i = 0; i < string.length; i += 2) {
