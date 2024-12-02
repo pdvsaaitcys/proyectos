@@ -28,7 +28,7 @@
         "Observaciones": "Se ajusta el presupuesto: Pasa de 569.300$ (Aprobado) a 288.050$ (Mejor Visión)"
       }
     ],
-    "items": [
+    "Items": [
       {
         "Item": "Consultoría Especializada para el desarrollo del Sistema Integrado para la Gestión de Mercado nacional (SIGEMINT)",
         "Entregable": "",
@@ -57,7 +57,7 @@
         "Ejecución Financiera": "0"
       }
     ],
-    "fases": [
+    "Fases": [
       {
         "Nombre": "Optimizar la plataforma",
         "Alcance": [
@@ -133,7 +133,7 @@
         "Observaciones": "Se ajusta presupuesto asignado 734800$ a 671037,93$ /Mejor Visión)"
       }
     ],
-    "items": [
+    "Items": [
       {
         "Item": "Consultoría Especializada para el desarrollo del Sistema Integrado para las Operaciones de Transporte Marítimo (SIGETMAR)",
         "Entregable": "",
@@ -153,7 +153,7 @@
         "Ejecución Financiera": "0"
       }
     ],
-    "fases": [
+    "Fases": [
       {
         "Nombre": "Recuperación de la plataforma tecnológica",
         "Alcance": [
@@ -235,7 +235,7 @@
         "Observaciones": "Incluye infraestructura de radio base marina, Incluye el desarrollo del sistema de gestión de terminales + el sistema SCADA WEB piloto en JOSE+ sistema de monitoreo de buque"
       }
     ],
-    "items": [
+    "Items": [
       {
         "Item": "Consultoría Especializada para el desarrollo del Sistema Integrado para las Operaciones en Terminales de Embarques (SIGETEMB)",
         "Entregable": "",
@@ -264,7 +264,7 @@
         "Ejecución Financiera": "0"
       }
     ],
-    "fases": [],
+    "Fases": [],
     "Alcance": [
       "Levantamiento de condiciones de la plataforma que soporta las operaciones en los 14 terminales marítimos",
       "Adecuación, remodelación y automatización de las salas de Control en los 14 Terminales Marinos.",
@@ -322,7 +322,7 @@
         "Observaciones": "Se ajusta el presupuesto asignado 2024 para cubrir: Recobro de equipos de tecnología de la Sala Situacional de la VPCYSN. OBSEVACIONES: Actualmente en SAP el total de estos montos, está cargado en la Clase de Costo: 73113001 que corresponde a \"Honorarios y Gastos Profesionales\". Se debe corregir y crear en SAP la clase de costo 74110102  \"Materiales / Suministros - No Operacionales\" para sustituir la anterior."
       }
     ],
-    "items": [
+    "Items": [
       {
         "Item": "Consultoría Especializada para el desarrollo del Sistema Integrado Nacional de Indicadores de Gestión y Manejo de Inventarios (SINIGMI-CyS)",
         "Entregable": "Sistema SINIGMI-CyS v1.0 (Dashboard con los indicadores de gestión preliminares)",
@@ -372,7 +372,7 @@
         "Ejecución Financiera": 0
       }
     ],
-    "fases": [],
+    "Fases": [],
     "Alcance": [],
     "Justificación": "",
     "Beneficios": [],
