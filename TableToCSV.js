@@ -1,7 +1,8 @@
 class TableToCSV {
-    constructor(tableId, fileName) {
+    constructor(tableId, fileName, separator = ',') {
         this.tableId = tableId;
         this.fileName = fileName;
+        this.separator = separator;
     }
 
     export() {
@@ -12,7 +13,7 @@ class TableToCSV {
             for (let cell of row.cells) {
                 rowData.push(cell.innerText);
             }
-            csv.push(rowData.join(','));
+            csv.push(rowData.join(this.separator));
         }
         const csvString = csv.join('\n');
         this.downloadCSV(csvString);
