@@ -76,13 +76,14 @@ class ProyectosManager {
 
     async generarTabla(titulo, campos, id) {
         this.data = await this.cargarJSON();
+        const filename = titulo === "" ? "resultados.csv" : titulo+".csv" 
         let tabla = `
             <div class="container">
                  <div class="d-flex justify-content-between">
                     <h2>${titulo}</h2>
                     <button class="btn btn-success" id="gt-export">Exportar a CSV</button>
                 </div>
-                <table class="table table-striped">
+                <table class="table table-striped" id="gt-table">
                     <thead>
                         <tr>${campos.map(campo => `<th>${campo}</th>`).join('')}</tr>
                     </thead>
@@ -100,6 +101,10 @@ class ProyectosManager {
             </div>
         `;
         document.getElementById(id).innerHTML=tabla;
+        const tableToCSV = new TableToCSV('gt-table', filename);
+        document.getElementById('export').addEventListener('click', function() {
+            tableToCSV.export();
+        });
     }
 
     async mostrarFicha(codigoBuscado, id, mostrarCampos = false, campos = []) {
