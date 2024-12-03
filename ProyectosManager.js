@@ -78,7 +78,10 @@ class ProyectosManager {
         this.data = await this.cargarJSON();
         let tabla = `
             <div class="container">
-                <h2>${titulo}</h2>
+                 <div class="d-flex justify-content-between">
+                    <h2>${titulo}</h2>
+                    <button class="btn btn-success" id="gt-export">Exportar a CSV</button>
+                </div>
                 <table class="table table-striped">
                     <thead>
                         <tr>${campos.map(campo => `<th>${campo}</th>`).join('')}</tr>
