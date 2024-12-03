@@ -102,7 +102,7 @@ class ProyectosManager {
         `;
         document.getElementById(id).innerHTML=tabla;
         const tableToCSV = new TableToCSV('gt-table', filename);
-        document.getElementById('export').addEventListener('click', function() {
+        document.getElementById('gt-export').addEventListener('click', function() {
             tableToCSV.export();
         });
     }
