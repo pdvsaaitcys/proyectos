@@ -77,7 +77,7 @@ class ProyectosManager {
     async generarTabla(titulo, campos, id) {
         this.data = await this.cargarJSON();
         let tabla = `
-            <div class="container mt-4">
+            <div class="container">
                 <h2>${titulo}</h2>
                 <table class="table table-striped">
                     <thead>
