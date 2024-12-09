@@ -8,17 +8,14 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="util.js"></script>
-          <style>
-        h1 {
-            margin-bottom: 20px;
-        }
+    <style>
         .org-chart {
             display: flex;
             flex-direction: column;
             align-items: center;
             margin-bottom: 40px;
         }
-        .node {
+        .oc_node {
             background-color: #fff;
             border: 1px solid #ccc;
             border-radius: 5px;
@@ -28,7 +25,7 @@
             position: relative;
             box-shadow: 0 2px 5px rgba(0,0,0,0.1);
         }
-        .line {
+        .oc_line {
             width: 2px;
             background-color: #ccc;
             position: absolute;
@@ -37,7 +34,7 @@
             height: 20px;
             transform: translateX(-50%);
         }
-        .children {
+        .oc_children {
             display: flex;
             justify-content: center;
             margin-top: 20px;
@@ -199,13 +196,13 @@
 
         function createNode(nodeData, isAsesor=false) {
             const node = document.createElement('div');
-            node.className = `node ${isAsesor ? 'text-bg-primary' : 'text-bg-light'}`;
+            node.className = `oc_node ${isAsesor ? 'text-bg-primary' : 'text-bg-light'}`;
             node.innerHTML = `<strong>${nodeData.puesto}</strong><br>${nodeData.nombre || 'Sin nombre'}`;
 
             // Agregar asesores si existen
             if (nodeData.asesores && nodeData.asesores.length > 0) {
                 const asesoresContainer = document.createElement('div');
-                asesoresContainer.className = 'children';
+                asesoresContainer.className = 'oc_children';
                 nodeData.asesores.forEach(asesor => {
                     asesoresContainer.appendChild(createNode(asesor, true));
                 });
@@ -214,7 +211,7 @@
 
             if (nodeData.hijos && nodeData.hijos.length > 0) {
                 const childrenContainer = document.createElement('div');
-                childrenContainer.className = 'children';
+                childrenContainer.className = 'oc_children';
                 nodeData.hijos.forEach(child => {
                     childrenContainer.appendChild(createNode(child));
                 });
