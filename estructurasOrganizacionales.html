@@ -76,12 +76,14 @@
             return node;
         }
 
-      const cyp = leerJson('./cyp.json');
-      if (cyp)  document.getElementById('cypChart').appendChild(createNode(cyp));
-      const galba = leerJson('./galba.json');
-      if (galba)  document.getElementById('galbaChart').appendChild(createNode(galba));
-      const tecnologia = leerJson('./tecnologia.json');
-      if (tecnologia)  document.getElementById('tecnologiaChart').appendChild(createNode(tecnologia));
+      const organizationCharts = async () =>  {
+        const cyp = await leerJson('./cyp.json');
+        if (cyp)  document.getElementById('cypChart').appendChild(createNode(cyp));
+        const galba = await leerJson('./galba.json');
+        if (galba)  document.getElementById('galbaChart').appendChild(createNode(galba));
+        const tecnologia = await leerJson('./tecnologia.json');
+        if (tecnologia)  document.getElementById('tecnologiaChart').appendChild(createNode(tecnologia));
+      }
     </script>
 </body>
 </html>
