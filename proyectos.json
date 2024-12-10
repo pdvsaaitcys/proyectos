@@ -327,7 +327,7 @@
         "Item": "Consultoría Especializada para el desarrollo del Sistema Integrado Nacional de Indicadores de Gestión y Manejo de Inventarios (SINIGMI-CyS)",
         "Entregable": "Sistema SINIGMI-CyS v1.0 (Dashboard con los indicadores de gestión preliminares)",
         "Monto": 0,
-        "Ejecución Fisica": 30,
+        "Ejecución Fisica": "30%",
         "Avance": [
           "Levantadas las especificaciones técnicas",
           "Solicitado el Presupuesto Base para someterlo a la unidad de contratación del negocio (CyS Nacional)"
@@ -339,7 +339,7 @@
           "Firma de acta de inicio y acuerdos de confidencialidad",
           "Iniciar el desarrollo de la aplicación Sistema SINIGMI-CyS"
         ],
-        "Ejecución Financiera": 0
+        "Ejecución Financiera": "0%"
       },
       {
         "Item": "Adecuación, Suministro e Instalación de Equipamiento Tecnológico para la Sala Situacional de la VP de Comercio y Suministro Nacional",
