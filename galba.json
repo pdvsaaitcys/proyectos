@@ -1,4 +1,4 @@
-[{
+{
             "puesto": "Galba",
             "nombre": "Omar Gómez",
             "asesores": [
@@ -53,5 +53,4 @@
                     "hijos": []
                 }
             ]
-        }
-]
+}
