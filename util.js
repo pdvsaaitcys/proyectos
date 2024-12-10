@@ -53,3 +53,20 @@ const decrypt_data = (string) => {
   }
   return newString;
 }
+async function leerJson(url) {
+    try {
+        // Realiza la solicitud fetch
+        const respuesta = await fetch(url);
+        // Verifica si la respuesta es exitosa
+        if (!respuesta.ok) {
+            throw new Error('Error en la red: ' + respuesta.status);
+        }
+        // Convierte la respuesta a JSON
+        const datos = await respuesta.json();
+        // Utiliza los datos (por ejemplo, imprimiéndolos en la consola)
+        return datos;
+        // Aquí puedes agregar más lógica para trabajar con los datos
+    } catch (error) {
+        console.error('Hubo un problema con la solicitud:', error);
+    }
+}
