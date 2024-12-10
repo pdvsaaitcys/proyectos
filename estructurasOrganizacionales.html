@@ -47,116 +47,6 @@
     </div>
 
     <script>
-        const cyp = {
-            "puesto": "Consultaria y Proyectos",
-            "nombre": "Aracelis Suez",
-            "hijos": [
-                {
-                    "puesto": "Exploración y Producción",
-                    "nombre": "Melchor Rivas",
-                    "hijos": []
-                },
-                {
-                    "puesto": "Gas",
-                    "nombre": "Samith Gómez",
-                    "hijos": []
-                },
-                {
-                    "puesto": "Refinación",
-                    "nombre": "Nilda Lugo",
-                    "hijos": []
-                },
-                {
-                    "puesto": "Comercio y Suministro",
-                    "nombre": "",
-                    "hijos": [
-                        {
-                            "puesto": "Consultoria",
-                            "nombre": "Oscar Mejias",
-                        },
-                        {
-                            "puesto": "Arquitectura",
-                            "nombre": "Leonardo Toussaint",
-                        },
-                        {
-                            "puesto": "Proyectos",
-                            "nombre": "Francisco Suárez",
-                        },
-                        {
-                            "puesto": "Requerimientos",
-                            "nombre": "Martha García",
-                        }
-                    ]
-                },
-                {
-                    "puesto": "Servicios No Petrolero",
-                    "nombre": "María Veliz",
-                    "hijos": []
-                },
-                {
-                    "puesto": "Gestión Empresarial",
-                    "nombre": "Franklin Avila",
-                    "hijos": []
-                }
-            ]
-        };
-
-        const galba = {
-            "puesto": "Galba",
-            "nombre": "Omar Gómez",
-            "asesores": [
-                {
-                    "puesto": "Arquitectura",
-                    "nombre": "Francisco Rodriguez"
-                },
-                {
-                    "puesto": "Planificación",
-                    "nombre": "Juan Mejias"
-                }
-            ],
-            "hijos": [
-                {
-                    "puesto": "Investigación y Optimización",
-                    "nombre": "Edgar Camargo",
-                    "hijos": []
-                },
-                {
-                    "puesto": "Innovación y Prospectiva",
-                    "nombre": "Oliver Colmenarez",
-                    "hijos": []
-                },
-                {
-                    "puesto": "Desarrollo Prototipo",
-                    "nombre": "Egner Acero",
-                    "hijos": []
-                },
-                {
-                    "puesto": "Aseguramiento de Calidad",
-                    "nombre": "Marilu Parra",
-                    "hijos": []
-                },
-                {
-                    "puesto": "Cartera Proyecto",
-                    "nombre": "Samuel Reyes",
-                    "hijos": []
-                },
-                {
-                    "puesto": "Mantenimiento y Desarrollo",
-                    "nombre": "Giampiero Ferrara",
-                    "hijos": []
-                },
-                {
-                    "puesto": "Integración",
-                    "nombre": "Yuleidi Blanco",
-                    "hijos": []
-                },
-                {
-                    "puesto": "Implantación de Soluciones",
-                    "nombre": "Douglas López",
-                    "hijos": []
-                }
-            ],
-        };
 
         const tecnologia = {
             "puesto": "Tecnología",
@@ -213,9 +103,12 @@
             return node;
         }
 
-        document.getElementById('cypChart').appendChild(createNode(cyp));
-        document.getElementById('galbaChart').appendChild(createNode(galba));
-        document.getElementById('tecnologiaChart').appendChild(createNode(tecnologia));
+      const cyp = leerJson('./cyp.json');
+      if (cyp)  document.getElementById('cypChart').appendChild(createNode(cyp));
+      const galba = leerJson('./galba.json');
+      if (galba)  document.getElementById('galbaChart').appendChild(createNode(galba));
+      const tecnologia = leerJson('./tecnologia.json');
+      if (tecnologia)  document.getElementById('tecnologiaChart').appendChild(createNode(tecnologia));
     </script>
 </body>
 </html>
