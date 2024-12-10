@@ -54,12 +54,11 @@
           let fotoUrl = "";
           if (nodeData.cedula) {
               const cedulaCompleta = nodeData.cedula.padStart(9, '0');
-              fotoUrl = `http://ccschu14.pdvsa.com/PHOTOS/${cedulaCompleta}.jpg`;
+              fotoUrl = `./images/${cedulaCompleta}.jpg`;
           }
           // Añadir la imagen y el texto al nodo
           node.innerHTML = `
-              ${fotoUrl ? `<img src="${fotoUrl}" alt="Foto de ${nodeData.nombre}">` : ''}
-              <strong>${nodeData.puesto}</strong><br>${nodeData.nombre || 'Sin nombre'}
+              ${fotoUrl ? `<strong>${nodeData.puesto}</strong><br><img src="${fotoUrl}" width="100" alt="Foto de ${nodeData.nombre}">` : ''}<br>${nodeData.nombre || 'Sin nombre'}
           `;
           // Agregar asesores si existen
           if (nodeData.asesores && nodeData.asesores.length > 0) {

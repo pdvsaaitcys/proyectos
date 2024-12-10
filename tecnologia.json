@@ -1,6 +1,7 @@
 {
             "puesto": "Tecnología",
             "nombre": "Carmen Rodríguez",
+            "cedula":"2643407",
             "asesores": [
                 {
                     "puesto": "Arquitectura",
