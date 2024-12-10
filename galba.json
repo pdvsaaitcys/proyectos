@@ -1,0 +1,57 @@
+{
+            "puesto": "Galba",
+            "nombre": "Omar Gómez",
+            "asesores": [
+                {
+                    "puesto": "Arquitectura",
+                    "nombre": "Francisco Rodriguez"
+                },
+                {
+                    "puesto": "Planificación",
+                    "nombre": "Juan Mejias"
+                }
+            ],
+            "hijos": [
+                {
+                    "puesto": "Investigación y Optimización",
+                    "nombre": "Edgar Camargo",
+                    "hijos": []
+                },
+                {
+                    "puesto": "Innovación y Prospectiva",
+                    "nombre": "Oliver Colmenarez",
+                    "hijos": []
+                },
+                {
+                    "puesto": "Desarrollo Prototipo",
+                    "nombre": "Egner Acero",
+                    "hijos": []
+                },
+                {
+                    "puesto": "Aseguramiento de Calidad",
+                    "nombre": "Marilu Parra",
+                    "hijos": []
+                },
+                {
+                    "puesto": "Cartera Proyecto",
+                    "nombre": "Samuel Reyes",
+                    "hijos": []
+                },
+                {
+                    "puesto": "Mantenimiento y Desarrollo",
+                    "nombre": "Giampiero Ferrara",
+                    "hijos": []
+                },
+                {
+                    "puesto": "Integración",
+                    "nombre": "Yuleidi Blanco",
+                    "hijos": []
+                },
+                {
+                    "puesto": "Implantación de Soluciones",
+                    "nombre": "Douglas López",
+                    "hijos": []
+                }
+            ],
+        }
+
