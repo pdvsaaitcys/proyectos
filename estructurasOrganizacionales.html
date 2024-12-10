@@ -47,8 +47,6 @@
     </div>
 
     <script>
-
-
         function createNode(nodeData, isAsesor=false) {
             const node = document.createElement('div');
             node.className = `oc_node ${isAsesor ? 'text-bg-primary' : 'text-bg-light'}`;
@@ -78,11 +76,11 @@
 
       const organizationCharts = async () =>  {
         const cyp = await leerJson('./cyp.json');
-        if (cyp)  document.getElementById('cypChart').appendChild(createNode(cyp));
+        if (cyp)  document.getElementById('cypChart').appendChild(createNode(cyp[0]));
         const galba = await leerJson('./galba.json');
-        if (galba)  document.getElementById('galbaChart').appendChild(createNode(galba));
+        if (galba)  document.getElementById('galbaChart').appendChild(createNode(galba[0]));
         const tecnologia = await leerJson('./tecnologia.json');
-        if (tecnologia)  document.getElementById('tecnologiaChart').appendChild(createNode(tecnologia));
+        if (tecnologia)  document.getElementById('tecnologiaChart').appendChild(createNode(tecnologia[0]));
       }
       organizationCharts();
     </script>
