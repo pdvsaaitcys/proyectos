@@ -57,8 +57,8 @@
               fotoUrl = `./images/${cedulaCompleta}.jpg`;
           }
           // Añadir la imagen y el texto al nodo
-          node.innerHTML = `
-              ${fotoUrl ? `<strong>${nodeData.puesto}</strong><br><img src="${fotoUrl}" width="100" alt="Foto de ${nodeData.nombre}">` : ''}<br>${nodeData.nombre || 'Sin nombre'}
+          node.innerHTML = `<strong>${nodeData.puesto}</strong>
+              ${fotoUrl ? `<br><img src="${fotoUrl}" width="100" alt="Foto de ${nodeData.nombre}">` : ''}<br>${nodeData.nombre || 'Sin nombre'}
           `;
           // Agregar asesores si existen
           if (nodeData.asesores && nodeData.asesores.length > 0) {
