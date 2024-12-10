@@ -1,4 +1,4 @@
-{
+[{
             "puesto": "Consultaria y Proyectos",
             "nombre": "Aracelis Suez",
             "hijos": [
@@ -50,4 +50,4 @@
                     "hijos": []
                 }
             ]
-        };
+        }]
