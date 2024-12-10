@@ -47,33 +47,39 @@
     </div>
 
     <script>
-        function createNode(nodeData, isAsesor=false) {
-            const node = document.createElement('div');
-            node.className = `oc_node ${isAsesor ? 'text-bg-primary' : 'text-bg-light'}`;
-            node.innerHTML = `<strong>${nodeData.puesto}</strong><br>${nodeData.nombre || 'Sin nombre'}`;
-
-            // Agregar asesores si existen
-            if (nodeData.asesores && nodeData.asesores.length > 0) {
-                const asesoresContainer = document.createElement('div');
-                asesoresContainer.className = 'oc_children';
-                nodeData.asesores.forEach(asesor => {
-                    asesoresContainer.appendChild(createNode(asesor, true));
-                });
-                    node.appendChild(asesoresContainer);
-            }
-
-            if (nodeData.hijos && nodeData.hijos.length > 0) {
-                const childrenContainer = document.createElement('div');
-                childrenContainer.className = 'oc_children';
-                nodeData.hijos.forEach(child => {
-                    childrenContainer.appendChild(createNode(child));
-                });
-                node.appendChild(childrenContainer);
-            }
-
-            return node;
-        }
-
+      function createNode(nodeData, isAsesor = false) {
+          const node = document.createElement('div');
+          node.className = `oc_node ${isAsesor ? 'text-bg-primary' : 'text-bg-light'}`;        
+          // Generar la URL de la foto
+          let fotoUrl = "";
+          if (nodeData.cedula) {
+              const cedulaCompleta = nodeData.cedula.padStart(9, '0');
+              fotoUrl = `http://ccschu14.pdvsa.com/PHOTOS/${cedulaCompleta}.jpg`;
+          }
+          // Añadir la imagen y el texto al nodo
+          node.innerHTML = `
+              ${fotoUrl ? `<img src="${fotoUrl}" alt="Foto de ${nodeData.nombre}">` : ''}
+              <strong>${nodeData.puesto}</strong><br>${nodeData.nombre || 'Sin nombre'}
+          `;
+          // Agregar asesores si existen
+          if (nodeData.asesores && nodeData.asesores.length > 0) {
+              const asesoresContainer = document.createElement('div');
+              asesoresContainer.className = 'oc_children';
+              nodeData.asesores.forEach(asesor => {
+                  asesoresContainer.appendChild(createNode(asesor, true));
+              });
+              node.appendChild(asesoresContainer);
+          }
+          if (nodeData.hijos && nodeData.hijos.length > 0) {
+              const childrenContainer = document.createElement('div');
+              childrenContainer.className = 'oc_children';
+              nodeData.hijos.forEach(child => {
+                  childrenContainer.appendChild(createNode(child));
+              });
+              node.appendChild(childrenContainer);
+          }
+          return node;
+      }
       const organizationCharts = async () =>  {
         const cyp = await leerJson('./cyp.json');
         if (cyp)  document.getElementById('cypChart').appendChild(createNode(cyp));
