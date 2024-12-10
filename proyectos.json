@@ -8,23 +8,23 @@
       {
         "Actividad": "Bienes",
         "Partida Presupuestaria": "402990000",
-        "Monto": "541592.06",
+        "Monto": 541592.06,
         "Descripción": "Servidores"
       },
       {
         "Actividad": "Servicios",
         "Partida Presupuestaria": "403100300",
-        "Monto": "3000",
+        "Monto": 3000,
         "Descripción": "Diseño de Integración de Sistemas"
       }
     ],
     "Años": [
       {
         "Año": "2024",
-        "Sometido (USD)": "569800",
-        "Presupuesto Aprobado": "569300",
-        "Presupuesto Aprobado Ajustado": "554900",
-        "Real": "0",
+        "Sometido (USD)": 569800,
+        "Presupuesto Aprobado": 569300,
+        "Presupuesto Aprobado Ajustado": 554900,
+        "Real": 0,
         "Observaciones": "Se ajusta el presupuesto: Pasa de 569.300$ (Aprobado) a 288.050$ (Mejor Visión)"
       }
     ],
@@ -32,29 +32,29 @@
       {
         "Item": "Consultoría Especializada para el desarrollo del Sistema Integrado para la Gestión de Mercado nacional (SIGEMINT)",
         "Entregable": "",
-        "Monto": "0",
-        "Ejecución Fisica": "0",
+        "Monto": 0,
+        "Ejecución Fisica": "0%",
         "Avance": [],
         "Próximos Pasos": [],
-        "Ejecución Financiera": "0"
+        "Ejecución Financiera": "0%"
       },
       {
         "Item": "Servicio Técnico Especializado para la Automatización del Proceso de Recapitulación de Términos y Condiciones de negocio (RECAP)",
         "Entregable": "",
-        "Monto": "0",
-        "Ejecución Fisica": "0",
+        "Monto": 0,
+        "Ejecución Fisica": "0%",
         "Avance": [],
         "Próximos Pasos": [],
-        "Ejecución Financiera": "0"
+        "Ejecución Financiera": "0%"
       },
       {
         "Item": "Consultoría Especializada para la Sistematización del Proceso de Planificación de Mercado Nacional",
         "Entregable": "",
-        "Monto": "0",
-        "Ejecución Fisica": "0",
+        "Monto": 0,
+        "Ejecución Fisica": "0%",
         "Avance": [],
         "Próximos Pasos": [],
-        "Ejecución Financiera": "0"
+        "Ejecución Financiera": 0
       }
     ],
     "Fases": [
@@ -113,23 +113,23 @@
       {
         "Actividad": "Bienes",
         "Partida Presupuestaria": "402990000",
-        "Monto": "496900",
+        "Monto": 496900,
         "Descripción": "Servidores"
       },
       {
         "Actividad": "Servicios",
         "Partida Presupuestaria": "403100300",
-        "Monto": "179000",
+        "Monto": 179000,
         "Descripción": "Diseño de Integración de Sistemas"
       }
     ],
     "Años": [
       {
         "Año": "2024",
-        "Sometido (USD)": "738300",
-        "Presupuesto Aprobado": "738800",
-        "Presupuesto Aprobado Ajustado": "702700",
-        "Real": "0",
+        "Sometido (USD)": 738300,
+        "Presupuesto Aprobado": 738800,
+        "Presupuesto Aprobado Ajustado": 702700,
+        "Real": 0,
         "Observaciones": "Se ajusta presupuesto asignado 734800$ a 671037,93$ /Mejor Visión)"
       }
     ],
@@ -137,20 +137,20 @@
       {
         "Item": "Consultoría Especializada para el desarrollo del Sistema Integrado para las Operaciones de Transporte Marítimo (SIGETMAR)",
         "Entregable": "",
-        "Monto": "0",
-        "Ejecución Fisica": "0",
+        "Monto": 0,
+        "Ejecución Fisica": "0%",
         "Avance": [],
         "Próximos Pasos": [],
-        "Ejecución Financiera": "0"
+        "Ejecución Financiera": "0%"
       },
       {
         "Item": "Recuperación de la Plataforma de Telecomunicaciones en la Flota Marítima",
         "Entregable": "",
-        "Monto": "0",
-        "Ejecución Fisica": "0",
+        "Monto": 0,
+        "Ejecución Fisica": "0%",
         "Avance": [],
         "Próximos Pasos": [],
-        "Ejecución Financiera": "0"
+        "Ejecución Financiera": "0%"
       }
     ],
     "Fases": [
@@ -215,23 +215,23 @@
       {
         "Actividad": "Bienes",
         "Partida Presupuestaria": "402990000",
-        "Monto": "1353549",
+        "Monto": 1353549,
         "Descripción": "Servidores"
       },
       {
         "Actividad": "Servicios",
         "Partida Presupuestaria": "403100300",
-        "Monto": "2071050",
+        "Monto": 2071050,
         "Descripción": "Diseño de Integración de Sistemas"
       }
     ],
     "Años": [
       {
         "Año": "2024",
-        "Sometido (USD)": "4931677",
-        "Presupuesto Aprobado": "4623844",
-        "Presupuesto Aprobado Ajustado": "4202729",
-        "Real": "300000",
+        "Sometido (USD)": 4931677,
+        "Presupuesto Aprobado": 4623844,
+        "Presupuesto Aprobado Ajustado": 4202729,
+        "Real": 300000,
         "Observaciones": "Incluye infraestructura de radio base marina, Incluye el desarrollo del sistema de gestión de terminales + el sistema SCADA WEB piloto en JOSE+ sistema de monitoreo de buque"
       }
     ],
@@ -239,29 +239,29 @@
       {
         "Item": "Consultoría Especializada para el desarrollo del Sistema Integrado para las Operaciones en Terminales de Embarques (SIGETEMB)",
         "Entregable": "",
-        "Monto": "0",
-        "Ejecución Fisica": "0",
+        "Monto": 0,
+        "Ejecución Fisica": "0%",
         "Avance": [],
         "Próximos Pasos": [],
-        "Ejecución Financiera": "0"
+        "Ejecución Financiera": "0%"
       },
       {
         "Item": "Recuperación de la Plataforma de Telecomunicaciones en los Terminales de Embarques (Radios de Banda Marina)",
         "Entregable": "",
-        "Monto": "0",
-        "Ejecución Fisica": "0",
+        "Monto": 0,
+        "Ejecución Fisica": "0%",
         "Avance": [],
         "Próximos Pasos": [],
-        "Ejecución Financiera": "0"
+        "Ejecución Financiera": "0%"
       },
       {
         "Item": "Consultoría Especializada para el desarrollo del Sistema de Monitoreo de Variables en muelles (SCADA WEB)",
         "Entregable": "",
-        "Monto": "0",
-        "Ejecución Fisica": "0",
+        "Monto": 0,
+        "Ejecución Fisica": "0%",
         "Avance": [],
         "Próximos Pasos": [],
-        "Ejecución Financiera": "0"
+        "Ejecución Financiera": "0%"
       }
     ],
     "Fases": [],
@@ -345,7 +345,7 @@
         "Item": "Adecuación, Suministro e Instalación de Equipamiento Tecnológico para la Sala Situacional de la VP de Comercio y Suministro Nacional",
         "Entregable": "Sala situacional adecuada y en funcionamiento tecnológico",
         "Monto": 0,
-        "Ejecución Fisica": 100,
+        "Ejecución Fisica": "100%",
         "Avance": [
           "Pendiente por entrega y cierre administrativo del contrato"
         ],
@@ -353,13 +353,13 @@
           "Completar la entrega de la Sala Situacional",
           "Ejecutar el cierre administrativo del contrato"
         ],
-        "Ejecución Financiera": 100
+        "Ejecución Financiera": "100%"
       },
       {
         "Item": "Adecuación, Suministro e Instalación de Equipamiento Tecnológico para la Sala de Operaciones de la VP de Comercio y Suministro Internacional",
         "Entregable": "Sala de Operaciones adecuada y en funcionamiento tecnológico",
         "Monto": 0,
-        "Ejecución Fisica": 50,
+        "Ejecución Fisica": "50%",
         "Características":[
           "Pantallas grandes, dinámicas y múltiples.",
           "Computadoras y laptops con alto rendimiento.",
@@ -384,7 +384,7 @@
           "Realizar las pruebas de funcionamiento tecnológico",
           "Hacer el cierre administrativo del Contrato"
         ],
-        "Ejecución Financiera": 0
+        "Ejecución Financiera": "0%"
       }
     ],
     "Fases": [],
