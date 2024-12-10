@@ -23,19 +23,19 @@
                     "hijos": [
                         {
                             "puesto": "Consultoria",
-                            "nombre": "Oscar Mejias",
+                            "nombre": "Oscar Mejias"
                         },
                         {
                             "puesto": "Arquitectura",
-                            "nombre": "Leonardo Toussaint",
+                            "nombre": "Leonardo Toussaint"
                         },
                         {
                             "puesto": "Proyectos",
-                            "nombre": "Francisco Suárez",
+                            "nombre": "Francisco Suárez"
                         },
                         {
                             "puesto": "Requerimientos",
-                            "nombre": "Martha García",
+                            "nombre": "Martha García"
                         }
                     ]
                 },
@@ -50,4 +50,5 @@
                     "hijos": []
                 }
             ]
-        }]
+        }
+]
