@@ -1,6 +1,7 @@
 {
             "puesto": "Consultaría y Proyectos",
             "nombre": "Aracelis Suez",
+            "cedula":"4279183",
             "hijos": [
                 {
                     "puesto": "Exploración y Producción",
@@ -31,7 +32,8 @@
                         },
                         {
                             "puesto": "Proyectos",
-                            "nombre": "Francisco Suárez"
+                            "nombre": "Francisco Suárez",
+                            "cedula": "7380171"
                         },
                         {
                             "puesto": "Requerimientos",
