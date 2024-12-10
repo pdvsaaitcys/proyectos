@@ -1,0 +1,53 @@
+{
+            "puesto": "Consultaria y Proyectos",
+            "nombre": "Aracelis Suez",
+            "hijos": [
+                {
+                    "puesto": "Exploración y Producción",
+                    "nombre": "Melchor Rivas",
+                    "hijos": []
+                },
+                {
+                    "puesto": "Gas",
+                    "nombre": "Samith Gómez",
+                    "hijos": []
+                },
+                {
+                    "puesto": "Refinación",
+                    "nombre": "Nilda Lugo",
+                    "hijos": []
+                },
+                {
+                    "puesto": "Comercio y Suministro",
+                    "nombre": "",
+                    "hijos": [
+                        {
+                            "puesto": "Consultoria",
+                            "nombre": "Oscar Mejias",
+                        },
+                        {
+                            "puesto": "Arquitectura",
+                            "nombre": "Leonardo Toussaint",
+                        },
+                        {
+                            "puesto": "Proyectos",
+                            "nombre": "Francisco Suárez",
+                        },
+                        {
+                            "puesto": "Requerimientos",
+                            "nombre": "Martha García",
+                        }
+                    ]
+                },
+                {
+                    "puesto": "Servicios No Petrolero",
+                    "nombre": "María Veliz",
+                    "hijos": []
+                },
+                {
+                    "puesto": "Gestión Empresarial",
+                    "nombre": "Franklin Avila",
+                    "hijos": []
+                }
+            ]
+        };
