@@ -26,7 +26,8 @@
                     "hijos": [
                         {
                             "puesto": "Consultoria",
-                            "nombre": "Oscar Mejias"
+                            "nombre": "Oscar Mejias",
+                            "cedula": "7833334"
                         },
                         {
                             "puesto": "Arquitectura",
