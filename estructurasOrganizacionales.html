@@ -58,7 +58,7 @@
           }
           // Añadir la imagen y el texto al nodo
           node.innerHTML = `<strong>${nodeData.puesto}</strong>
-              ${fotoUrl ? `<br><img src="${fotoUrl}" width="100" alt="Foto de ${nodeData.nombre}">` : ''}<br>${nodeData.nombre || 'Sin nombre'}
+              ${fotoUrl ? `<br><img src="${fotoUrl}" width="80" alt="Foto de ${nodeData.nombre}">` : ''}<br>${nodeData.nombre || 'Sin nombre'}
           `;
           // Agregar asesores si existen
           if (nodeData.asesores && nodeData.asesores.length > 0) {
