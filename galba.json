@@ -4,7 +4,8 @@
             "asesores": [
                 {
                     "puesto": "Arquitectura",
-                    "nombre": "Francisco Rodríguez"
+                    "nombre": "Francisco Rodríguez",
+                    "cedula": "12883023"
                 },
                 {
                     "puesto": "Planificación",
